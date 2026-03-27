@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
@@ -280,6 +280,22 @@ footer{background:#0d1870;padding:28px 24px 20px}
   .tab{padding:12px 9px;font-size:.64rem}
   .btn-hero-main,.btn-hero-sec{font-size:.8rem}
 }
+
+/* ── WHATSAPP FLOTANTE ── */
+.wa-float{position:fixed;bottom:24px;right:24px;z-index:999;background:#25D366;color:#fff;border-radius:50%;width:56px;height:56px;display:flex;align-items:center;justify-content:center;font-size:1.6rem;box-shadow:0 4px 20px rgba(37,211,102,.45);text-decoration:none;transition:all .25s}
+.wa-float:hover{background:#1ebe5d;transform:scale(1.1);box-shadow:0 6px 28px rgba(37,211,102,.6)}
+
+/* ── BOTÓN IMPRIMIR ── */
+.btn-print{background:#f1f5f9;color:var(--sub);border:1.5px solid var(--border);padding:8px 16px;border-radius:9px;font-size:.78rem;font-weight:700;cursor:pointer;margin-top:10px;display:inline-flex;align-items:center;gap:6px;transition:all .2s;font-family:inherit;width:100%}
+.btn-print:hover{background:#e2e8f0;color:var(--txt)}
+
+/* ── PRINT ── */
+@media print{
+  .topnav,.tabs-wrap,.hero,.brands-bar,.cta-section,footer,.wa-float,.btn-print,.hero-btns{display:none!important}
+  .pnl{display:block!important}
+  .card{box-shadow:none!important;border:1px solid #ccc!important}
+  body{background:#fff!important}
+}
 </style>
 </head>
 <body>
@@ -301,7 +317,7 @@ footer{background:#0d1870;padding:28px 24px 20px}
   <div class="hero-inner">
     <div class="hero-left">
       <div class="logo-wrap">
-        <img class="logo-img" src="https://www.electroriente.com.co/web/image/website/1/logo/Electroriente" alt="Electroriente S.A.S.">
+        <img class="logo-img" src="https://www.electroriente.com.co/web/image/website/1/logo/Electroriente" onerror="this.src='LOGOS_ELECTRORIENTE_NUEVO_COLOR01_1.png'" alt="Electroriente S.A.S.">
       </div>
       <div class="hero-eyebrow">
         <span class="hero-eyebrow-dot"></span>
@@ -430,6 +446,7 @@ footer{background:#0d1870;padding:28px 24px 20px}
             <div class="rsub" id="r0s"></div>
           </div>
           <div id="r0r"></div>
+          <button class="btn-print" onclick="window.print()">🖨️ Imprimir / Exportar resultado</button>
         </div>
       </div>
     </div>
@@ -475,6 +492,7 @@ footer{background:#0d1870;padding:28px 24px 20px}
             <div class="rsub" id="r1s"></div>
           </div>
           <div id="r1r"></div>
+          <button class="btn-print" onclick="window.print()">🖨️ Imprimir / Exportar resultado</button>
         </div>
       </div>
     </div>
@@ -523,6 +541,7 @@ footer{background:#0d1870;padding:28px 24px 20px}
             <div class="div"></div>
             <div class="rsub" id="r2s"></div>
           </div>
+          <button class="btn-print" onclick="window.print()">🖨️ Imprimir / Exportar resultado</button>
         </div>
       </div>
     </div>
@@ -574,6 +593,7 @@ footer{background:#0d1870;padding:28px 24px 20px}
             <div id="r3a"></div>
           </div>
           <div id="r3r"></div>
+          <button class="btn-print" onclick="window.print()">🖨️ Imprimir / Exportar resultado</button>
         </div>
       </div>
     </div>
@@ -632,6 +652,7 @@ footer{background:#0d1870;padding:28px 24px 20px}
             <div class="rsub" id="r4s"></div>
           </div>
           <div id="r4r"></div>
+          <button class="btn-print" onclick="window.print()">🖨️ Imprimir / Exportar resultado</button>
         </div>
       </div>
     </div>
@@ -685,6 +706,7 @@ footer{background:#0d1870;padding:28px 24px 20px}
             <div class="rsub" id="r5s"></div>
           </div>
           <div id="r5r"></div>
+          <button class="btn-print" onclick="window.print()">🖨️ Imprimir / Exportar resultado</button>
         </div>
       </div>
     </div>
@@ -692,6 +714,13 @@ footer{background:#0d1870;padding:28px 24px 20px}
 
   </div><!-- /wrap -->
 </div><!-- /calculadora -->
+
+<!-- DISCLAIMER -->
+<div style="background:#fffbeb;border-top:2px solid #fcd34d;border-bottom:2px solid #fcd34d;padding:12px 24px;text-align:center">
+  <p style="font-size:.75rem;color:#92400e;max-width:900px;margin:0 auto;line-height:1.6">
+    ⚠️ <strong>Aviso importante:</strong> Los resultados de esta calculadora son orientativos y de apoyo técnico. Siempre deben ser verificados y aprobados por un ingeniero eléctrico certificado antes de su implementación. Electroriente S.A.S. no se hace responsable por decisiones tomadas con base exclusiva en estos cálculos. Normas de referencia: NTC 2050, NEC y RETILAP Colombia.
+  </p>
+</div>
 
 <!-- CTA SECTION -->
   <section class="cta-section" id="cotizar">
@@ -737,7 +766,7 @@ footer{background:#0d1870;padding:28px 24px 20px}
   <div class="ftr-inner">
     <div class="ftr-top">
       <div class="ftr-logo-wrap">
-        <img class="ftr-logo-img" src="https://www.electroriente.com.co/web/image/website/1/logo/Electroriente" alt="Electroriente S.A.S.">
+        <img class="ftr-logo-img" src="https://www.electroriente.com.co/web/image/website/1/logo/Electroriente" onerror="this.src='LOGOS_ELECTRORIENTE_NUEVO_COLOR01_1.png';this.style.filter='brightness(0) invert(1)'" alt="Electroriente S.A.S.">
         <div class="ftr-tagline">54 años de experiencia en materiales<br>eléctricos en Bucaramanga y Santander</div>
         <a class="ftr-web" href="https://www.electroriente.com.co" target="_blank">🌐 www.electroriente.com.co</a>
       </div>
@@ -768,7 +797,23 @@ footer{background:#0d1870;padding:28px 24px 20px}
   </div>
 </footer>
 
+<!-- WHATSAPP FLOTANTE -->
+<a class="wa-float" href="https://wa.me/573107255623?text=Hola%20Electroriente%2C%20usé%20su%20calculadora%20eléctrica%20y%20quiero%20cotizar." target="_blank" title="Chatear por WhatsApp">💬</a>
+
 <script>
+// ── VALIDACIÓN ──
+function showErr(resId,msg){
+  const r=document.getElementById(resId);
+  r.className='res on';
+  r.innerHTML=`<div class="al bad">⚠️ ${msg}</div>`;
+}
+function chk(val,min,max,label,resId){
+  if(isNaN(val)||val===''||val===null){showErr(resId,`Ingresa un valor válido en "${label}".`);return false;}
+  if(min!==null&&val<=min){showErr(resId,`"${label}" debe ser mayor a ${min}.`);return false;}
+  if(max!==null&&val>max){showErr(resId,`"${label}" no puede superar ${max}.`);return false;}
+  return true;
+}
+
 const CB=[
   {awg:'14',  mm2:2.08,  cu:15,  al:0,   r:8.450},
   {awg:'12',  mm2:3.31,  cu:20,  al:0,   r:5.210},
@@ -817,9 +862,14 @@ function cCable(){
   if(tipo==='pot'){
     let P=parseFloat(document.getElementById('c-pv').value);
     const pu=document.getElementById('c-pu').value,fp=parseFloat(document.getElementById('c-fp').value),ef=parseFloat(document.getElementById('c-ef').value);
+    if(!chk(P,0,null,'Potencia','r0'))return;
+    if(!chk(fp,0,1,'Factor de Potencia','r0'))return;
     if(pu==='HP')P*=0.7457;else if(pu==='W')P/=1000;
     I=is3?(P*1000)/(Math.sqrt(3)*V*fp*ef):(P*1000)/(V*fp*ef);
-  }else{I=parseFloat(document.getElementById('c-av').value);}
+  }else{
+    I=parseFloat(document.getElementById('c-av').value);
+    if(!chk(I,0,null,'Corriente','r0'))return;
+  }
   const Id=I*fac,found=CB.find(c=>(mat==='Cu'?c.cu:c.al)>=Id);
   document.getElementById('r0').className='res on';
   if(!found){document.getElementById('r0m').textContent='> 500MCM';document.getElementById('r0s').textContent=`Corriente de diseño: ${f1(Id)} A — Requiere conductores en paralelo.`;document.getElementById('r0r').innerHTML=recBox('pry','Conductor especial','Para corrientes >310A contacte a Electroriente para asesoría especializada.');return;}
@@ -831,7 +881,8 @@ function cCable(){
 }
 function cBreaker(){
   const I=parseFloat(document.getElementById('b-i').value),curva=document.getElementById('b-t').value,polos=document.getElementById('b-p').value,V=document.getElementById('b-v').value;
-  const fac=curva==='D'?2.5:1.25,In=I*fac,std=[6,10,13,16,20,25,32,40,50,63,80,100,125,160,200,250,320,400,500,630],sel=std.find(s=>s>=In)||630;
+  if(!chk(I,0,null,'Corriente de la carga','r1'))return;
+  const fac=curva==='D'?2.5:curva==='B'?1.0:1.25,In=I*fac,std=[6,10,13,16,20,25,32,40,50,63,80,100,125,160,200,250,320,400,500,630],sel=std.find(s=>s>=In)||630;
   let nom,det;
   if(sel<=63){nom=`iC60N ${sel}A — Curva ${curva} — ${polos}P`;det=`Termomagnético ≤63A · Poder de corte 6kA · Riel DIN · Serie iC60`;}
   else if(sel<=100){nom=`NSX100F TM-D ${sel}A — ${polos}P`;det=`Caja moldeada NSX · 36kA · Para tableros industriales`;}
@@ -846,12 +897,14 @@ function cBreaker(){
 }
 function cPot(){
   const v=parseFloat(document.getElementById('pt-v').value),u=document.getElementById('pt-u').value,fp=parseFloat(document.getElementById('pt-fp').value),sys=document.getElementById('pt-s').value,V=gV(sys),is3=tri(sys);
+  if(!chk(v,0,null,'Valor de potencia','r2'))return;
+  if(!chk(fp,0,1,'Factor de Potencia','r2'))return;
   let kW=u==='kW'?v:u==='W'?v/1000:u==='HP'?v*0.7457:v*fp;
   const W=kW*1000,HP=kW/0.7457,kVA=kW/fp,kVAR=Math.sqrt(Math.max(0,kVA**2-kW**2)),I=is3?(kW*1000)/(Math.sqrt(3)*V*fp):(kW*1000)/(V*fp);
   document.getElementById('r2').className='res on';
   document.getElementById('r2g').innerHTML=
     `<div class="ccell"><div class="cval">${kW>=1?f2(kW):f3(kW)}</div><div class="cunit">kW</div></div>`+
-    `<div class="ccell"><div class="cval">${W>=1000?f2(kW)+'k':f1(W)}</div><div class="cunit">Watts</div></div>`+
+    `<div class="ccell"><div class="cval">${W>=1000?Math.round(W).toLocaleString('es-CO'):f1(W)}</div><div class="cunit">Watts</div></div>`+
     `<div class="ccell"><div class="cval">${f3(HP)}</div><div class="cunit">HP</div></div>`+
     `<div class="ccell"><div class="cval">${f3(kVA)}</div><div class="cunit">kVA</div></div>`+
     `<div class="ccell"><div class="cval">${f3(kVAR)}</div><div class="cunit">kVAR</div></div>`+
@@ -860,6 +913,8 @@ function cPot(){
 }
 function cVD(){
   const I=parseFloat(document.getElementById('vd-i').value),sys=document.getElementById('vd-s').value,L=parseFloat(document.getElementById('vd-l').value),idx=parseInt(document.getElementById('vd-awg').value),matF=parseFloat(document.getElementById('vd-m').value),lim=parseFloat(document.getElementById('vd-lim').value),V=gV(sys),is3=tri(sys);
+  if(!chk(I,0,null,'Corriente del circuito','r3'))return;
+  if(!chk(L,0,null,'Longitud del tramo','r3'))return;
   const c=CB[idx],R=c.r*matF,dV=is3?Math.sqrt(3)*I*L*R/1000:2*I*L*R/1000,pct=(dV/V)*100;
   let recIdx=idx;
   if(pct>lim){for(let i=idx+1;i<CB.length;i++){const dVi=is3?Math.sqrt(3)*I*L*CB[i].r*matF/1000:2*I*L*CB[i].r*matF/1000;if((dVi/V)*100<=lim){recIdx=i;break;}}}
@@ -876,6 +931,7 @@ function cVD(){
 }
 function cVar(){
   let p=parseFloat(document.getElementById('va-p').value);
+  if(!chk(p,0,null,'Potencia del motor','r4'))return;
   const u=document.getElementById('va-u').value,volt=document.getElementById('va-v').value,tipo=document.getElementById('va-t').value,app=document.getElementById('va-a').value;
   const kW=u==='HP'?p*0.7457:p,hp=u==='HP'?p:p/0.7457;
   let model,serie,det;
@@ -914,10 +970,13 @@ const SYL={
 };
 function cIlum(){
   const tipo=document.getElementById('il-t').value,A=parseFloat(document.getElementById('il-a').value),h=parseFloat(document.getElementById('il-h').value),refl=parseFloat(document.getElementById('il-r').value),E=LUX[tipo];
+  if(!chk(A,0,null,'Área del espacio','r5'))return;
+  if(!chk(h,0,null,'Altura de montaje','r5'))return;
   let lumF={...SYL[tipo]};
   if((tipo==='bd'||tipo==='in')&&h>6)lumF={lm:18000,W:150,nom:'Highbay LED Sylvania 150W',cod:'SYL-HB-150W'};
   if((tipo==='bd'||tipo==='in')&&h>10)lumF={lm:24000,W:200,nom:'Highbay LED Sylvania 200W',cod:'SYL-HB-200W'};
-  const CU=refl*(h>8?0.82:h>5?0.90:0.97),FM=0.80,N=Math.ceil((E*A)/(lumF.lm*CU*FM)),Pt=N*lumF.W,den=Pt/A,kWh_mes=Pt*8*22/1000;
+  const FM_map={of:0.80,bd:0.70,in:0.70,co:0.80,pa:0.75,pe:0.75,pi:0.75,re:0.80,ho:0.85};
+  const CU=refl*(h>8?0.82:h>5?0.90:0.97),FM=FM_map[tipo]||0.80,N=Math.ceil((E*A)/(lumF.lm*CU*FM)),Pt=N*lumF.W,den=Pt/A,kWh_mes=Pt*8*22/1000;
   document.getElementById('r5').className='res on';
   document.getElementById('r5m').textContent=`${N} luminarias`;
   document.getElementById('r5s').innerHTML=`Nivel req.: <strong>${E} lux</strong> (${NOM[tipo]}) &nbsp;·&nbsp; Área: <strong>${A} m²</strong> &nbsp;·&nbsp; Altura: ${h}m<br>Potencia total: <strong>${Pt} W (${f2(Pt/1000)} kW)</strong> &nbsp;·&nbsp; Densidad: <strong>${f1(den)} W/m²</strong><br>Consumo estimado: <strong>${f1(kWh_mes)} kWh/mes</strong> (8h/día · 22 días)`;
