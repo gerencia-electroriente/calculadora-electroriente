@@ -1,0 +1,1910 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora Eléctrica Profesional — Electroriente S.A.S.</title>
+<meta name="description" content="Herramienta profesional para dimensionar cables AWG, breakers, potencia, caída de tensión, variadores Schneider e iluminación Sylvania. Electroriente S.A.S., Bucaramanga.">
+<meta name="author" content="Electroriente S.A.S.">
+<meta property="og:title" content="Calculadora Eléctrica Profesional — Electroriente">
+<meta property="og:description" content="Dimensiona instalaciones eléctricas con normas NTC 2050, NEC y RETILAP. 8 módulos de cálculo gratuitos.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8IS0tIENyZWF0b3I6IENvcmVsRFJBVyAtLT4NCjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4IiB2ZXJzaW9uPSIxLjEiIHN0eWxlPSJzaGFwZS1yZW5kZXJpbmc6Z2VvbWV0cmljUHJlY2lzaW9uOyB0ZXh0LXJlbmRlcmluZzpnZW9tZXRyaWNQcmVjaXNpb247IGltYWdlLXJlbmRlcmluZzpvcHRpbWl6ZVF1YWxpdHk7IGZpbGwtcnVsZTpldmVub2RkOyBjbGlwLXJ1bGU6ZXZlbm9kZCINCnZpZXdCb3g9IjAgMCAwLjM3IDAuMzciDQogeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiDQogeG1sbnM6eG9kbT0iaHR0cDovL3d3dy5jb3JlbC5jb20vY29yZWxkcmF3L29kbS8yMDAzIj4NCiA8ZGVmcz4NCiAgPHN0eWxlIHR5cGU9InRleHQvY3NzIj4NCiAgIDwhW0NEQVRBWw0KICAgIC5maWwwIHtmaWxsOm5vbmV9DQogICAgLmZpbDEge2ZpbGw6IzNBNDU5OX0NCiAgIF1dPg0KICA8L3N0eWxlPg0KIDwvZGVmcz4NCiA8ZyBpZD0iQ2FwYV94MDAyMF8xIj4NCiAgPG1ldGFkYXRhIGlkPSJDb3JlbENvcnBJRF8wQ29yZWwtTGF5ZXIiLz4NCiAgPHJlY3QgY2xhc3M9ImZpbDAiIHdpZHRoPSIwLjM3IiBoZWlnaHQ9IjAuMzciLz4NCiAgPHBhdGggY2xhc3M9ImZpbDEiIGQ9Ik0wLjEgMC4zNGwwLjE2IDAgMC4wMyAtMC4yOGMwLjAxLC0wLjAyIC0wLjAxLC0wLjAzIC0wLjAyLC0wLjAzbC0wLjE2IDAgLTAuMDQgMC4yOGMwLDAuMDEgMC4wMSwwLjAzIDAuMDMsMC4wM3ptMC4wNCAtMC4wNWwwLjA4IDAgMC4wMiAtMC4yYzAuMDEsLTAuMDEgMCwtMC4wMiAtMC4wMSwtMC4wMmwtMC4wOCAwIC0wLjAzIDAuMmMwLDAuMDEgMC4wMSwwLjAyIDAuMDIsMC4wMnoiLz4NCiA8L2c+DQo8L3N2Zz4NCg==">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,700;1,800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--blue:#1E2FBE;--dark:#0f1d8a;--light:#f0f2f9;--card:#fff;--txt:#1a1a2e;--sub:#64748b;--border:#e2e8f0}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--light);color:var(--txt);min-height:100vh;scroll-behavior:smooth}
+
+/* ── TOP NAV ── */
+.topnav{background:#0d1870;padding:9px 24px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.nav-info{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.nav-link{color:rgba(255,255,255,.75);font-size:.72rem;font-weight:500;display:flex;align-items:center;gap:5px;text-decoration:none;transition:color .2s}
+.nav-link:hover{color:#fff}
+.nav-link .ni{font-size:.85rem}
+.nav-cta{background:#ffd600;color:#0d1870;font-size:.72rem;font-weight:800;padding:6px 14px;border-radius:20px;text-decoration:none;white-space:nowrap;transition:all .2s}
+.nav-cta:hover{background:#ffe033;transform:translateY(-1px)}
+
+/* ── HERO ── */
+.hero{position:relative;min-height:380px;background:#0f1d8a;display:flex;align-items:center;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80&fit=crop');background-size:cover;background-position:center;opacity:.18}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(10,20,100,.98) 0%,rgba(20,38,180,.88) 55%,rgba(8,16,90,.95) 100%)}
+.hero-inner{position:relative;z-index:1;max-width:960px;margin:0 auto;padding:48px 24px;display:flex;align-items:center;gap:48px;flex-wrap:wrap}
+.hero-left{flex:1;min-width:280px}
+.hero-right{flex:0 0 auto}
+
+/* LOGO */
+.logo-wrap{margin-bottom:20px}
+.logo-img{height:48px;display:block;filter:brightness(0) invert(1)}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:7px;background:rgba(255,214,0,.15);border:1px solid rgba(255,214,0,.35);border-radius:20px;padding:5px 13px;margin-bottom:14px}
+.hero-eyebrow-dot{width:7px;height:7px;background:#ffd600;border-radius:50%;flex-shrink:0}
+.hero-eyebrow-txt{font-size:.68rem;font-weight:700;color:#ffd600;text-transform:uppercase;letter-spacing:1px}
+.hero-title{font-size:clamp(2.6rem,5vw,4rem);font-weight:900;color:#fff;line-height:1.08;margin-bottom:8px;font-family:'Barlow Condensed',sans-serif;font-style:italic;letter-spacing:-.5px;word-break:break-word}
+.hero-title span{color:#ffd600}
+.hero-title-sub{font-size:.9rem;font-weight:700;color:rgba(255,255,255,.55);letter-spacing:2.5px;text-transform:uppercase;margin-bottom:16px}
+.hero-sub{font-size:.88rem;color:rgba(255,255,255,.72);line-height:1.65;margin-bottom:26px;max-width:460px}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn-hero-main{background:#ffd600;color:#0d1870;font-weight:800;font-size:.88rem;padding:13px 26px;border-radius:10px;border:none;cursor:pointer;transition:all .2s;text-decoration:none;display:inline-flex;align-items:center;gap:7px}
+.btn-hero-main:hover{background:#ffe033;transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.btn-hero-sec{background:rgba(255,255,255,.1);color:#fff;font-weight:700;font-size:.88rem;padding:13px 26px;border-radius:10px;border:1.5px solid rgba(255,255,255,.25);cursor:pointer;transition:all .2s;text-decoration:none;display:inline-flex;align-items:center;gap:7px;backdrop-filter:blur(4px)}
+.btn-hero-sec:hover{background:rgba(255,255,255,.2);border-color:rgba(255,255,255,.55)}
+
+/* HERO STATS */
+.hero-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;min-width:230px}
+.hstat{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:14px;padding:16px 14px;text-align:center;backdrop-filter:blur(6px);transition:background .2s}
+.hstat:hover{background:rgba(255,255,255,.13)}
+.hstat-n{font-size:1.9rem;font-weight:900;color:#ffd600;font-family:'Barlow Condensed',sans-serif;font-style:italic;line-height:1}
+.hstat-sup{font-size:1rem;vertical-align:super;margin-left:1px}
+.hstat-l{font-size:.6rem;color:rgba(255,255,255,.6);font-weight:700;text-transform:uppercase;letter-spacing:.6px;margin-top:5px;line-height:1.35}
+.hstat-icon{font-size:.9rem;margin-bottom:4px;opacity:.8}
+
+/* ── BRANDS ── */
+.brands-bar{background:#fff;border-bottom:1px solid var(--border);padding:16px 24px}
+.brands-inner{max-width:900px;margin:0 auto;display:flex;align-items:center;gap:0;flex-wrap:wrap}
+.brands-label{font-size:.68rem;font-weight:800;color:var(--sub);text-transform:uppercase;letter-spacing:1px;margin-right:20px;white-space:nowrap;padding:4px 0}
+.brand-pill{display:flex;align-items:center;gap:10px;padding:8px 16px;border-radius:25px;font-size:.78rem;font-weight:700;margin:3px 6px 3px 0;border:1.5px solid var(--border);color:var(--txt);background:#fafbff;transition:all .2s}
+.brand-pill:hover{border-color:var(--blue);background:#eef0fc}
+.brand-pill img{height:22px;width:auto;object-fit:contain;display:block;flex-shrink:0}
+
+/* ── TABS ── */
+.tabs-wrap{background:var(--blue);position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(30,47,190,.3)}
+.tabs{display:flex;overflow-x:auto;scrollbar-width:none;max-width:900px;margin:0 auto}
+.tabs::-webkit-scrollbar{display:none}
+.tab{padding:14px 16px;color:rgba(255,255,255,.55);cursor:pointer;font-size:.73rem;font-weight:700;white-space:nowrap;border-bottom:3px solid transparent;transition:all .2s;user-select:none;display:flex;align-items:center;gap:6px;letter-spacing:.3px}
+.tab:hover{color:rgba(255,255,255,.9);background:rgba(255,255,255,.08)}
+.tab.on{color:#fff;border-bottom-color:#ffd600;background:rgba(255,255,255,.12)}
+
+/* ── WRAP ── */
+.wrap{max-width:900px;margin:0 auto;padding:24px 16px 16px}
+.pnl{display:none}.pnl.on{display:block}
+
+/* ── CARD ── */
+.card{background:var(--card);border-radius:18px;overflow:hidden;box-shadow:0 2px 20px rgba(30,47,190,.07);border:1px solid var(--border);margin-bottom:20px}
+.card-img{height:140px;background-size:cover;background-position:center;position:relative;background-color:#1E2FBE}
+.card-img::after{content:'';position:absolute;inset:0;background:linear-gradient(to right,rgba(13,24,112,.9) 0%,rgba(30,47,190,.75) 100%)}
+.card-img-content{position:absolute;inset:0;z-index:1;display:flex;align-items:center;gap:16px;padding:20px 24px}
+.card-ico-big{width:52px;height:52px;background:rgba(255,255,255,.15);border:1.5px solid rgba(255,255,255,.25);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.6rem;flex-shrink:0;backdrop-filter:blur(4px)}
+.card-img-txt{}
+.card-ttl{font-size:1.1rem;font-weight:800;color:#fff;margin-bottom:3px}
+.card-desc{font-size:.78rem;color:rgba(255,255,255,.75);line-height:1.4}
+.brand-tag{display:inline-flex;align-items:center;gap:5px;font-size:.66rem;font-weight:700;color:#ffd600;background:rgba(255,214,0,.15);border:1px solid rgba(255,214,0,.3);padding:3px 8px;border-radius:20px;margin-top:6px}
+
+.card-body{padding:22px 24px 24px}
+
+/* ── FORM ── */
+.r2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
+.r1{margin-bottom:14px}
+.fg{display:flex;flex-direction:column;gap:6px}
+label{font-size:.69rem;font-weight:700;color:var(--sub);text-transform:uppercase;letter-spacing:.6px}
+input[type=number],select{padding:11px 13px;border:1.5px solid var(--border);border-radius:11px;font-size:.88rem;color:var(--txt);outline:none;background:#fafbff;width:100%;transition:all .2s;font-family:inherit;appearance:none;-webkit-appearance:none}
+select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%2364748b' d='M6 8L0 0h12z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 13px center;padding-right:34px}
+input:focus,select:focus{border-color:var(--blue);background:#fff;box-shadow:0 0 0 3px rgba(30,47,190,.08)}
+
+.btn{background:linear-gradient(135deg,var(--blue),#3b52e0);color:#fff;border:none;padding:14px;border-radius:12px;font-size:.95rem;font-weight:700;cursor:pointer;width:100%;margin-top:6px;letter-spacing:.2px;transition:all .2s;box-shadow:0 4px 14px rgba(30,47,190,.25);font-family:inherit}
+.btn:hover{transform:translateY(-1px);box-shadow:0 6px 20px rgba(30,47,190,.35)}
+.btn:active{transform:translateY(0)}
+
+/* ── RESULT ── */
+.res{display:none;margin-top:18px}.res.on{display:block}
+.res-box{background:linear-gradient(135deg,#f4f6ff,#eef0fc);border:2px solid var(--blue);border-radius:14px;padding:20px;position:relative;overflow:hidden}
+.res-box::before{content:'';position:absolute;top:-40px;right:-40px;width:120px;height:120px;background:rgba(30,47,190,.06);border-radius:50%}
+.rlabel{font-size:.66rem;font-weight:800;color:var(--sub);text-transform:uppercase;letter-spacing:1.2px;margin-bottom:6px}
+.rmain{font-size:1.9rem;font-weight:900;color:var(--blue);line-height:1.1;margin-bottom:8px;font-family:'Barlow Condensed',sans-serif;font-style:italic}
+.rsub{font-size:.82rem;color:#555;line-height:1.75}
+.div{border:none;border-top:1px solid var(--border);margin:16px 0}
+
+/* ── REC CARD ── */
+.rec{background:#fff;border:1px solid var(--border);border-radius:13px;padding:16px;margin-top:12px;display:flex;gap:14px;align-items:flex-start;box-shadow:0 2px 8px rgba(0,0,0,.04)}
+.rec-ico{width:42px;height:42px;border-radius:11px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;overflow:hidden}
+.ico-gr{background:#f0fdf4}.ico-bl{background:#eff6ff}.ico-ye{background:#fffbeb}
+.rbrand{font-size:.64rem;font-weight:800;color:var(--sub);text-transform:uppercase;letter-spacing:.8px;margin-bottom:3px}
+.rprod{font-size:.92rem;font-weight:800;color:var(--txt);margin-bottom:4px;line-height:1.3}
+.rdet{font-size:.76rem;color:var(--sub);line-height:1.6}
+
+/* ── ALERTS ── */
+.al{padding:11px 15px;border-radius:11px;font-size:.83rem;font-weight:600;margin-top:12px;display:flex;align-items:flex-start;gap:8px;line-height:1.5}
+.ok{background:#f0fdf4;color:#166534;border:1.5px solid #86efac}
+.warn{background:#fffbeb;color:#92400e;border:1.5px solid #fcd34d}
+.bad{background:#fef2f2;color:#991b1b;border:1.5px solid #fca5a5}
+
+/* ── POWER GRID ── */
+.cgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:4px}
+.ccell{background:#fff;border:1.5px solid var(--border);border-radius:12px;padding:14px 8px;text-align:center;transition:border-color .2s}
+.ccell:hover{border-color:var(--blue)}
+.cval{font-size:1.2rem;font-weight:900;color:var(--blue);font-family:'Barlow Condensed',sans-serif}
+.cunit{font-size:.65rem;color:var(--sub);font-weight:700;margin-top:2px;text-transform:uppercase;letter-spacing:.5px}
+
+/* ── CTA SECTION ── */
+.cta-section{position:relative;background:#0f1d8a;overflow:hidden;padding:48px 24px}
+.cta-bg{position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1400&q=80&fit=crop');background-size:cover;background-position:center;opacity:.15}
+.cta-inner{position:relative;z-index:1;max-width:900px;margin:0 auto;display:flex;align-items:center;gap:40px;flex-wrap:wrap}
+.cta-text{flex:1;min-width:250px}
+.cta-title{font-size:1.5rem;font-weight:800;color:#fff;margin-bottom:10px;line-height:1.3}
+.cta-sub{font-size:.88rem;color:rgba(255,255,255,.75);line-height:1.65;margin-bottom:20px}
+.cta-contacts{display:flex;gap:16px;flex-wrap:wrap}
+.cta-btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:10px;font-size:.85rem;font-weight:700;text-decoration:none;transition:all .2s;cursor:pointer;border:none}
+.cta-btn-main{background:#ffd600;color:#0d1870}
+.cta-btn-main:hover{background:#ffe033;transform:translateY(-1px)}
+.cta-btn-sec{background:rgba(255,255,255,.12);color:#fff;border:1.5px solid rgba(255,255,255,.3)}
+.cta-btn-sec:hover{background:rgba(255,255,255,.2)}
+.cta-cards{display:flex;flex-direction:column;gap:12px;flex-shrink:0}
+.cta-card{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:12px;padding:14px 18px;display:flex;align-items:center;gap:12px;backdrop-filter:blur(4px);min-width:220px}
+.cta-card-ico{font-size:1.4rem}
+.cta-card-txt .tit{font-size:.72rem;font-weight:800;color:rgba(255,255,255,.6);text-transform:uppercase;letter-spacing:.6px}
+.cta-card-txt .val{font-size:.88rem;font-weight:700;color:#fff}
+
+/* ── FOOTER ── */
+footer{background:#0d1870;padding:28px 24px 20px}
+.ftr-inner{max-width:900px;margin:0 auto}
+.ftr-top{display:flex;align-items:flex-start;gap:40px;flex-wrap:wrap;padding-bottom:20px;border-bottom:1px solid rgba(255,255,255,.1);margin-bottom:16px}
+.ftr-logo-wrap{max-width:200px}
+.ftr-logo-img{height:38px;display:block;filter:brightness(0) invert(1);opacity:.9;margin-bottom:10px}
+.ftr-tagline{font-size:.75rem;color:rgba(255,255,255,.5);margin-bottom:6px;line-height:1.4}
+.ftr-web{font-size:.78rem;color:#ffd600;font-weight:700;text-decoration:none}
+.ftr-web:hover{text-decoration:underline}
+.ftr-col{}
+.ftr-col-title{font-size:.68rem;font-weight:800;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:1px;margin-bottom:10px}
+.ftr-item{font-size:.78rem;color:rgba(255,255,255,.7);margin-bottom:6px;display:flex;align-items:center;gap:6px;line-height:1.4}
+.ftr-bottom{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.ftr-copy{font-size:.7rem;color:rgba(255,255,255,.35)}
+.ftr-dev{font-size:.64rem;color:rgba(255,255,255,.22);margin-top:4px}
+.ftr-brands{display:flex;gap:12px;flex-wrap:wrap}
+.ftr-brand{font-size:.68rem;color:rgba(255,255,255,.4);font-weight:600}
+
+/* ═══════════════════════════════════════════
+   RESPONSIVE — Mobile-first breakpoints
+   900px → tablet  |  768px → tablet pequeño
+   600px → móvil   |  400px → teléfono chico
+═══════════════════════════════════════════ */
+
+/* ── Tablet grande (≤900px) ── */
+@media(max-width:900px){
+  .hero-inner{padding:36px 20px;gap:32px}
+  .cta-inner{gap:28px}
+  .wrap{padding:20px 14px}
+  .ftr-top{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+}
+
+/* ── Tablet pequeño (≤768px) ── */
+@media(max-width:768px){
+  .hero-inner{flex-direction:column;align-items:flex-start;gap:24px}
+  .hero-right{width:100%}
+  .hero-stats{grid-template-columns:repeat(3,1fr);gap:8px}
+  .hstat{padding:12px 8px}
+  .hstat-n{font-size:1.4rem}
+  .hstat-icon{font-size:.8rem}
+  /* topnav: ocultar email en tablet */
+  .nav-info .nav-link:nth-child(3){display:none}
+}
+
+/* ── Móvil (≤600px) ── */
+@media(max-width:600px){
+  /* Topnav compacto */
+  .topnav{padding:8px 14px}
+  .nav-info{display:none}
+  .topnav{justify-content:space-between}
+
+  /* Hero */
+  .hero{min-height:auto}
+  .hero-inner{padding:26px 16px 22px;gap:20px}
+  .hero-left{min-width:unset;width:100%}
+  .logo-img{height:38px}
+  .hero-eyebrow{padding:4px 10px}
+  .hero-eyebrow-txt{font-size:.6rem}
+  .hero-title{font-size:clamp(2rem,8vw,2.8rem)}
+  .hero-title-sub{font-size:.78rem;letter-spacing:1.2px;margin-bottom:10px}
+  .hero-sub{font-size:.84rem;margin-bottom:20px}
+  .hero-btns{flex-direction:column;gap:8px}
+  .btn-hero-main,.btn-hero-sec{width:100%;justify-content:center;padding:13px 20px}
+
+  /* Stats en 3 columnas en mobile */
+  .hero-right{width:100%}
+  .hero-stats{grid-template-columns:repeat(3,1fr);gap:7px}
+  .hstat{padding:11px 8px}
+  .hstat-n{font-size:1.4rem}
+  .hstat-icon{font-size:.8rem}
+  .hstat-l{font-size:.57rem}
+
+  /* Brands */
+  .brands-bar{padding:12px 14px}
+  .brand-pill{font-size:.72rem;padding:6px 10px}
+
+  /* Tabs: scroll horizontal nativo con mejor touch target */
+  .tab{padding:13px 12px;font-size:.69rem;min-height:44px;gap:4px}
+
+  /* Cards */
+  .wrap{padding:14px 12px}
+  .card-img{height:110px}
+  .card-img-content{padding:14px 16px}
+  .card-ico-big{width:42px;height:42px;font-size:1.3rem}
+  .card-ttl{font-size:.95rem}
+  .card-body{padding:16px 16px 18px}
+
+  /* Formulario — iOS: font-size mínimo 16px para evitar zoom automático */
+  input[type=number],select{font-size:16px;padding:12px 13px}
+
+  /* Grids de formulario */
+  .r2{grid-template-columns:1fr}
+  .cgrid{grid-template-columns:1fr 1fr}
+
+  /* Resultados */
+  .rmain{font-size:1.5rem}
+  .res-box{padding:16px}
+
+  /* Rec cards: apila icono + texto en pantallas muy estrechas */
+  .rec{gap:10px}
+  .rec-ico{width:38px;height:38px;font-size:1.1rem;flex-shrink:0}
+
+  /* CTA section */
+  .cta-section{padding:30px 16px}
+  .cta-title{font-size:1.2rem}
+  .cta-sub{font-size:.84rem;margin-bottom:16px}
+  .cta-contacts{flex-direction:column;gap:8px}
+  .cta-btn{width:100%;justify-content:center}
+  .cta-cards{display:none}
+
+  /* Footer */
+  .ftr-top{display:flex;flex-direction:column;gap:20px;padding-bottom:16px}
+  .ftr-logo-wrap{max-width:100%}
+  .ftr-bottom{flex-direction:column;align-items:flex-start;gap:6px}
+}
+
+/* ── Teléfono pequeño (≤400px) ── */
+@media(max-width:400px){
+  .hero-title{font-size:1.5rem}
+  .hero-stats{grid-template-columns:1fr 1fr;gap:6px}
+  .hstat-n{font-size:1.4rem}
+  .cgrid{grid-template-columns:1fr}
+  .tab{padding:12px 9px;font-size:.64rem}
+  .btn-hero-main,.btn-hero-sec{font-size:.8rem}
+}
+
+/* ── WHATSAPP FLOTANTE ── */
+.wa-float{position:fixed;bottom:24px;right:24px;z-index:999;background:#25D366;color:#fff;border-radius:50%;width:56px;height:56px;display:flex;align-items:center;justify-content:center;font-size:1.6rem;box-shadow:0 4px 20px rgba(37,211,102,.45);text-decoration:none;transition:all .25s}
+.wa-float:hover{background:#1ebe5d;transform:scale(1.1);box-shadow:0 6px 28px rgba(37,211,102,.6)}
+
+/* ── BOTÓN IMPRIMIR ── */
+.btn-print{background:#f1f5f9;color:var(--sub);border:1.5px solid var(--border);padding:8px 16px;border-radius:9px;font-size:.78rem;font-weight:700;cursor:pointer;margin-top:10px;display:inline-flex;align-items:center;gap:6px;transition:all .2s;font-family:inherit;width:100%}
+.btn-print:hover{background:#e2e8f0;color:var(--txt)}
+
+/* ── ALTERNATIVAS POR GAMA ── */
+.alts{display:flex;flex-direction:column;gap:10px;margin-top:14px}
+.alt-card{border-radius:13px;padding:15px 18px;border:2px solid}
+.alt-card.alt-entrada {border-color:#fcd34d;background:#fffbeb}
+.alt-card.alt-estandar{border-color:#86efac;background:#f0fdf4}
+.alt-card.alt-premium {border-color:#93c5fd;background:#eff6ff}
+.alt-header{display:flex;align-items:center;gap:9px;margin-bottom:7px;flex-wrap:wrap}
+.alt-familia{min-width:0;word-break:break-word}
+.alt-badge{font-size:.62rem;font-weight:800;padding:3px 9px;border-radius:20px;text-transform:uppercase;letter-spacing:.8px}
+.alt-entrada  .alt-badge{background:#fef9c3;color:#92400e;border:1px solid #fcd34d}
+.alt-estandar .alt-badge{background:#dcfce7;color:#166534;border:1px solid #86efac}
+.alt-premium  .alt-badge{background:#dbeafe;color:#1e3a8a;border:1px solid #93c5fd}
+.alt-familia{font-size:.98rem;font-weight:800;color:var(--txt)}
+.alt-desc{font-size:.79rem;color:var(--sub);margin-bottom:7px;line-height:1.5}
+.alt-ref{font-size:.81rem;color:var(--txt);background:rgba(0,0,0,.05);padding:6px 10px;border-radius:8px;margin-bottom:6px}
+.ref-exacta{font-family:'Barlow Condensed',monospace;font-size:.95rem;font-weight:700;color:var(--blue);background:#fff;border:1.5px solid var(--blue);border-radius:8px;padding:7px 14px;display:inline-flex;align-items:center;gap:10px;cursor:pointer;transition:all .2s;user-select:all;margin-top:5px}
+.ref-exacta:hover{background:#eef0fc;box-shadow:0 2px 8px rgba(30,47,190,.12)}
+.ref-exacta:active{background:#dce0f8}
+.ref-copy-ico{font-size:.75rem;color:var(--sub);font-family:'Inter',sans-serif;font-weight:600}
+.alt-why{font-size:.77rem;color:#166534}
+.alt-nota{font-size:.75rem;color:#92400e;background:#fffbeb;border:1px solid #fcd34d;border-radius:8px;padding:6px 10px;margin-top:7px}
+.alts-label{font-size:.69rem;font-weight:800;color:var(--sub);text-transform:uppercase;letter-spacing:1px;margin:14px 0 8px}
+.asesor-cta{background:#f0f4ff;border:1.5px solid var(--blue);border-radius:12px;padding:14px 16px;margin-top:8px;display:flex;align-items:flex-start;gap:10px;overflow:hidden}
+.asesor-cta-ico{font-size:1.2rem;flex-shrink:0}
+.asesor-cta>div{flex:1;min-width:0}
+.asesor-cta-tit{font-size:.8rem;font-weight:800;color:var(--blue);margin-bottom:3px}
+.asesor-cta-det{font-size:.76rem;color:var(--sub);line-height:1.5;word-break:break-word;overflow-wrap:break-word}
+
+/* ── BADGES DE VALIDACIÓN ── */
+.vbadge{display:inline-flex;align-items:center;font-size:.59rem;font-weight:800;padding:2px 8px;border-radius:20px;letter-spacing:.4px;white-space:nowrap}
+.vbadge-ok  {background:#dcfce7;color:#166534;border:1px solid #86efac}
+.vbadge-pend{background:#fffbeb;color:#92400e;border:1px solid #fcd34d}
+.vbadge-prov{background:#f1f5f9;color:#475569;border:1px solid #cbd5e1}
+.alt-obs{font-size:.76rem;color:#92400e;background:#fffbeb;border:1px solid #fcd34d;border-radius:8px;padding:6px 10px;margin-top:7px}
+
+/* ── PANEL CATÁLOGO ── */
+.cat-panel{background:#f8fafc;border-top:2px solid var(--border);padding:22px 24px}
+.cat-panel-inner{max-width:900px;margin:0 auto}
+.cat-panel-title{font-size:.78rem;font-weight:800;color:var(--sub);text-transform:uppercase;letter-spacing:1px;margin-bottom:12px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.cat-stats-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.cstat{display:inline-flex;align-items:center;font-size:.73rem;font-weight:700;padding:4px 11px;border-radius:20px}
+.cstat.ok  {background:#dcfce7;color:#166534;border:1px solid #86efac}
+.cstat.warn{background:#fffbeb;color:#92400e;border:1px solid #fcd34d}
+.cstat.gray,.cstat.prov{background:#f1f5f9;color:#64748b;border:1px solid #e2e8f0}
+.cat-actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:10px}
+.cat-modo-lbl{font-size:.68rem;font-weight:700;color:var(--sub);text-transform:uppercase;letter-spacing:.6px}
+.cat-modo-btn{padding:6px 13px;border-radius:20px;font-size:.73rem;font-weight:700;border:1.5px solid var(--border);background:#fff;cursor:pointer;transition:all .2s;color:var(--sub)}
+.cat-modo-btn.on{background:var(--blue);color:#fff;border-color:var(--blue)}
+.cat-import-btn{padding:6px 14px;border-radius:20px;font-size:.72rem;font-weight:700;border:1.5px solid var(--border);background:#fff;cursor:pointer;transition:all .2s;color:var(--txt);display:inline-flex;align-items:center;gap:5px}
+.cat-import-btn:hover{border-color:var(--blue);background:#eef0fc}
+.cat-status{font-size:.75rem;color:#166534;margin-top:4px;min-height:18px}
+.cat-schema-note{font-size:.73rem;color:var(--sub);background:#fff;border:1px solid var(--border);border-radius:10px;padding:10px 14px;margin-top:12px;line-height:1.7}
+
+/* ── PRINT ── */
+@media print{
+  .topnav,.tabs-wrap,.hero,.brands-bar,.cta-section,footer,.wa-float,.btn-print,.hero-btns{display:none!important}
+  .pnl{display:block!important}
+  .card{box-shadow:none!important;border:1px solid #ccc!important}
+  body{background:#fff!important}
+}
+</style>
+</head>
+<body>
+
+<!-- TOP NAV -->
+<div class="topnav">
+  <div class="nav-info">
+    <a class="nav-link" href="#"><span class="ni">📍</span> Calle 36 #16-18, Bucaramanga</a>
+    <a class="nav-link" href="tel:+573107255623"><span class="ni">📞</span> +57 310 7255623</a>
+    <a class="nav-link" href="mailto:ventas@electroriente.com.co"><span class="ni">✉️</span> ventas@electroriente.com.co</a>
+  </div>
+  <a class="nav-cta" href="#cotizar">Solicitar cotización →</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="logo-wrap">
+        <img class="logo-img" src="https://www.electroriente.com.co/web/image/website/1/logo/Electroriente" onerror="this.src='LOGOS_ELECTRORIENTE_NUEVO_COLOR01_1.png'" alt="Electroriente S.A.S.">
+      </div>
+      <div class="hero-eyebrow">
+        <span class="hero-eyebrow-dot"></span>
+        <span class="hero-eyebrow-txt">Propiedad de Electroriente S.A.S. · Bucaramanga, Colombia</span>
+      </div>
+      <h1 class="hero-title">Calculadora <span>Eléctrica</span> Profesional</h1>
+      <p class="hero-title-sub">NTC 2050 · NEC · RETILAP</p>
+      <p class="hero-sub">Dimensiona cables, protecciones, potencia, caída de tensión, variadores de velocidad e iluminación con recomendaciones de productos reales para tu proyecto eléctrico.</p>
+      <div class="hero-btns">
+        <button class="btn-hero-main" onclick="document.getElementById('calculadora').scrollIntoView({behavior:'smooth'})">⚡ Calcular ahora</button>
+        <a class="btn-hero-sec" href="#cotizar">Cotizar con Electroriente →</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-stats">
+        <div class="hstat">
+          <div class="hstat-icon">🏆</div>
+          <div class="hstat-n">54<span class="hstat-sup">+</span></div>
+          <div class="hstat-l">Años de<br>experiencia</div>
+        </div>
+        <div class="hstat">
+          <div class="hstat-icon">🔧</div>
+          <div class="hstat-n">8</div>
+          <div class="hstat-l">Módulos de<br>cálculo</div>
+        </div>
+        <div class="hstat">
+          <div class="hstat-icon">📋</div>
+          <div class="hstat-n" style="font-size:1rem;letter-spacing:0">NTC</div>
+          <div class="hstat-l">2050 · NEC<br>RETILAP</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BRANDS -->
+<div class="brands-bar">
+  <div class="brands-inner">
+    <span class="brands-label">Marcas aliadas:</span>
+    <div class="brand-pill"><img src="1-%20Logos%20proveedores%20a%20Color-20260331T150916Z-3-001/1-%20Logos%20proveedores%20a%20Color/logo-schneider-electric.png" alt="Schneider Electric">Schneider Electric</div>
+    <div class="brand-pill"><img src="1-%20Logos%20proveedores%20a%20Color-20260331T150916Z-3-001/1-%20Logos%20proveedores%20a%20Color/Procables%20Prysmian_Logo.svg.png" alt="Prysmian · Procables">Prysmian · Procables</div>
+    <div class="brand-pill"><img src="1-%20Logos%20proveedores%20a%20Color-20260331T150916Z-3-001/1-%20Logos%20proveedores%20a%20Color/Logo-Sylvania-verde-01.png" alt="Sylvania LED">Sylvania LED</div>
+    <div class="brand-pill"><img src="1-%20Logos%20proveedores%20a%20Color-20260331T150916Z-3-001/1-%20Logos%20proveedores%20a%20Color/Binson.png" alt="Binson">Binson</div>
+    <div class="brand-pill"><img src="1-%20Logos%20proveedores%20a%20Color-20260331T150916Z-3-001/1-%20Logos%20proveedores%20a%20Color/logo-schneider-electric.png" alt="Dexson">Dexson</div>
+  </div>
+</div>
+
+<!-- CALCULATOR -->
+<div id="calculadora">
+  <div class="tabs-wrap">
+    <div class="tabs">
+      <div class="tab on"  onclick="T(0)">🔌 Calibre de Cable</div>
+      <div class="tab"     onclick="T(1)">⚡ Breakers</div>
+      <div class="tab"     onclick="T(2)">🔄 Potencia</div>
+      <div class="tab"     onclick="T(3)">📉 Caída de Tensión</div>
+      <div class="tab"     onclick="T(4)">🎛️ Variadores</div>
+      <div class="tab"     onclick="T(5)">💡 Iluminación</div>
+      <div class="tab"     onclick="T(6)">📦 Canalización</div>
+      <div class="tab"     onclick="T(7)">🔩 Tubería / Bandeja</div>
+    </div>
+  </div>
+
+  <div class="wrap">
+
+  <!-- ── PANEL 0 · CABLE ── -->
+  <div class="pnl on" id="p0">
+    <div class="card">
+      <div class="card-img" style="background-image:url('https://www.electroriente.com.co/web/image/82061-e417ba08/53%20A%C3%91OS.webp')">
+        <div class="card-img-content">
+          <div class="card-ico-big">🔌</div>
+          <div class="card-img-txt">
+            <div class="card-ttl">Calibre de Cable</div>
+            <div class="card-desc">AWG/mm² recomendado según carga y sistema — NTC 2050 / NEC</div>
+            <div class="brand-tag">🔵 Prysmian Group (Procables)</div>
+          </div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="r2">
+          <div class="fg"><label>Tipo de entrada</label>
+            <select id="c-tipo" onchange="toggleC()">
+              <option value="pot">Potencia (kW / HP / W)</option>
+              <option value="amp">Corriente conocida (A)</option>
+            </select>
+          </div>
+          <div class="fg"><label>Sistema eléctrico</label>
+            <select id="c-sis">
+              <option value="1f120">Monofásico 120V</option>
+              <option value="1f220">Monofásico 220V</option>
+              <option value="3f220">Trifásico 220V</option>
+              <option value="3f440">Trifásico 440V</option>
+            </select>
+          </div>
+        </div>
+        <div id="c-pr">
+          <div class="r2">
+            <div class="fg"><label>Potencia</label><input type="number" id="c-pv" value="5" min="0.01" step="0.1"></div>
+            <div class="fg"><label>Unidad</label>
+              <select id="c-pu"><option value="kW">kW</option><option value="HP">HP</option><option value="W">W</option></select>
+            </div>
+          </div>
+          <div class="r2">
+            <div class="fg"><label>Factor de Potencia</label><input type="number" id="c-fp" value="0.85" min="0.5" max="1" step="0.01"></div>
+            <div class="fg"><label>Tipo de equipo</label>
+              <select id="c-ef">
+                <option value="0.90">Motor eléctrico (η 90%)</option>
+                <option value="1.0">Carga resistiva (η 100%)</option>
+                <option value="0.85">Iluminación (η 85%)</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div id="c-ar" style="display:none" class="r2">
+          <div class="fg"><label>Corriente nominal (A)</label><input type="number" id="c-av" value="20" min="0.1" step="0.1"></div>
+          <div class="fg"><label>Factor de Potencia</label><input type="number" id="c-fp2" value="0.85" min="0.5" max="1" step="0.01"></div>
+        </div>
+        <div class="r2">
+          <div class="fg"><label>Material conductor</label>
+            <select id="c-mat"><option value="Cu">Cobre (Cu)</option><option value="Al">Aluminio (Al)</option></select>
+          </div>
+          <div class="fg"><label>Tipo de carga</label>
+            <select id="c-load"><option value="1.25">Continua ×1.25 (NEC)</option><option value="1.0">No continua ×1.0</option></select>
+          </div>
+        </div>
+        <button class="btn" onclick="cCable()">⚡ Calcular Calibre</button>
+        <div class="res" id="r0">
+          <div class="res-box">
+            <div class="rlabel">Calibre Recomendado</div>
+            <div class="rmain" id="r0m"></div>
+            <div class="rsub" id="r0s"></div>
+          </div>
+          <div id="r0r"></div>
+          <button class="btn-print" onclick="window.print()">🖨️ Imprimir / Exportar resultado</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── PANEL 1 · BREAKERS ── -->
+  <div class="pnl" id="p1">
+    <div class="card">
+      <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&q=80&fit=crop')">
+        <div class="card-img-content">
+          <div class="card-ico-big">⚡</div>
+          <div class="card-img-txt">
+            <div class="card-ttl">Dimensionamiento de Breakers</div>
+            <div class="card-desc">Protecciones termomagnéticas según carga, curva y polos</div>
+            <div class="brand-tag">🟢 Schneider Electric</div>
+          </div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="r2">
+          <div class="fg"><label>Corriente de la carga (A)</label><input type="number" id="b-i" value="20" min="0.1" step="0.1"></div>
+          <div class="fg"><label>Tipo de carga</label>
+            <select id="b-t">
+              <option value="">No especificado</option>
+              <option value="C">General / Iluminación — Curva C</option>
+              <option value="D">Motor / Arranque duro — Curva D</option>
+              <option value="B">Residencial / Sensible — Curva B</option>
+            </select>
+          </div>
+        </div>
+        <div class="r2">
+          <div class="fg"><label>Número de polos</label>
+            <select id="b-p"><option value="1">1 Polo</option><option value="2">2 Polos</option><option value="3">3 Polos</option><option value="4">4 Polos</option></select>
+          </div>
+          <div class="fg"><label>Tensión nominal</label>
+            <select id="b-v"><option value="120">120V</option><option value="220">220V</option><option value="440">440V</option><option value="600">600V</option></select>
+          </div>
+        </div>
+        <div class="r2">
+          <div class="fg"><label>Poder de corte mínimo</label>
+            <select id="b-pc">
+              <option value="0">No especificado</option>
+              <option value="4.5">≥ 4.5 kA — Residencial</option>
+              <option value="6">≥ 6 kA — Industrial ligero</option>
+              <option value="10">≥ 10 kA — Industrial</option>
+              <option value="36">≥ 36 kA — Acometidas</option>
+            </select>
+          </div>
+          <div class="fg"><label>Formato de montaje</label>
+            <select id="b-mt">
+              <option value="">Cualquiera</option>
+              <option value="enchufable">Enchufable (Homeline)</option>
+              <option value="riel DIN">Riel DIN (modular)</option>
+              <option value="fijo">Caja moldeada</option>
+            </select>
+          </div>
+        </div>
+        <button class="btn" onclick="cBreaker()">⚡ Dimensionar Breaker</button>
+        <div class="res" id="r1">
+          <div class="res-box">
+            <div class="rlabel">Protección Recomendada</div>
+            <div class="rmain" id="r1m"></div>
+            <div class="rsub" id="r1s"></div>
+          </div>
+          <div id="r1r"></div>
+          <button class="btn-print" onclick="window.print()">🖨️ Imprimir / Exportar resultado</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── PANEL 2 · POTENCIA ── -->
+  <div class="pnl" id="p2">
+    <div class="card">
+      <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1518770660439-4636190af475?w=900&q=80&fit=crop')">
+        <div class="card-img-content">
+          <div class="card-ico-big">🔄</div>
+          <div class="card-img-txt">
+            <div class="card-ttl">Conversión de Potencia</div>
+            <div class="card-desc">W · kW · HP · kVA · kVAR — Corriente nominal del sistema</div>
+          </div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="r2">
+          <div class="fg"><label>Valor</label><input type="number" id="pt-v" value="10" min="0.001" step="0.1"></div>
+          <div class="fg"><label>Unidad de entrada</label>
+            <select id="pt-u">
+              <option value="kW">kW (kilowatts)</option>
+              <option value="W">W (watts)</option>
+              <option value="HP">HP (caballos)</option>
+              <option value="kVA">kVA (aparente)</option>
+            </select>
+          </div>
+        </div>
+        <div class="r2">
+          <div class="fg"><label>Factor de Potencia</label><input type="number" id="pt-fp" value="0.85" min="0.1" max="1" step="0.01"></div>
+          <div class="fg"><label>Sistema eléctrico</label>
+            <select id="pt-s">
+              <option value="1f120">Monofásico 120V</option>
+              <option value="1f220">Monofásico 220V</option>
+              <option value="3f220">Trifásico 220V</option>
+              <option value="3f440">Trifásico 440V</option>
+            </select>
+          </div>
+        </div>
+        <button class="btn" onclick="cPot()">🔄 Convertir Potencia</button>
+        <div class="res" id="r2">
+          <div class="res-box">
+            <div class="rlabel">Equivalencias de Potencia</div>
+            <div class="cgrid" id="r2g"></div>
+            <div class="div"></div>
+            <div class="rsub" id="r2s"></div>
+          </div>
+          <button class="btn-print" onclick="window.print()">🖨️ Imprimir / Exportar resultado</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── PANEL 3 · CAÍDA ── -->
+  <div class="pnl" id="p3">
+    <div class="card">
+      <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1617886903355-9354bb57751f?w=900&q=80&fit=crop')">
+        <div class="card-img-content">
+          <div class="card-ico-big">📉</div>
+          <div class="card-img-txt">
+            <div class="card-ttl">Caída de Tensión</div>
+            <div class="card-desc">Porcentaje de caída — NTC 2050 / NEC: máx. 3% ramales, 5% alimentadores</div>
+            <div class="brand-tag">🔵 Prysmian Group (Procables)</div>
+          </div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="r2">
+          <div class="fg"><label>Corriente del circuito (A)</label><input type="number" id="vd-i" value="20" min="0.1" step="0.1"></div>
+          <div class="fg"><label>Sistema eléctrico</label>
+            <select id="vd-s">
+              <option value="1f120">Monofásico 120V</option>
+              <option value="1f220">Monofásico 220V</option>
+              <option value="3f220">Trifásico 220V</option>
+              <option value="3f440">Trifásico 440V</option>
+            </select>
+          </div>
+        </div>
+        <div class="r2">
+          <div class="fg"><label>Longitud del tramo (m)</label><input type="number" id="vd-l" value="30" min="1" step="1"></div>
+          <div class="fg"><label>Calibre del conductor</label><select id="vd-awg"></select></div>
+        </div>
+        <div class="r2">
+          <div class="fg"><label>Material conductor</label>
+            <select id="vd-m"><option value="1">Cobre (Cu)</option><option value="1.64">Aluminio (Al)</option></select>
+          </div>
+          <div class="fg"><label>Límite de caída</label>
+            <select id="vd-lim"><option value="3">3% — Circuitos ramales</option><option value="5">5% — Alimentadores</option></select>
+          </div>
+        </div>
+        <button class="btn" onclick="cVD()">📉 Calcular Caída de Tensión</button>
+        <div class="res" id="r3">
+          <div class="res-box">
+            <div class="rlabel">Resultado</div>
+            <div class="rmain" id="r3m"></div>
+            <div class="rsub" id="r3s"></div>
+            <div id="r3a"></div>
+          </div>
+          <div id="r3r"></div>
+          <button class="btn-print" onclick="window.print()">🖨️ Imprimir / Exportar resultado</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── PANEL 4 · VARIADORES ── -->
+  <div class="pnl" id="p4">
+    <div class="card">
+      <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1565043666747-69f6646db940?w=900&q=80&fit=crop')">
+        <div class="card-img-content">
+          <div class="card-ico-big">🎛️</div>
+          <div class="card-img-txt">
+            <div class="card-ttl">Variadores y Arrancadores Suaves</div>
+            <div class="card-desc">Selección de equipo por potencia, tensión y tipo de aplicación</div>
+            <div class="brand-tag">🟢 Schneider Electric — Altivar / Altistart</div>
+          </div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="r2">
+          <div class="fg"><label>Potencia del motor</label><input type="number" id="va-p" value="5" min="0.25" step="0.25"></div>
+          <div class="fg"><label>Unidad</label>
+            <select id="va-u"><option value="HP">HP</option><option value="kW">kW</option></select>
+          </div>
+        </div>
+        <div class="r2">
+          <div class="fg"><label>Tensión del motor</label>
+            <select id="va-v">
+              <option value="220t">220V Trifásico</option>
+              <option value="440t">440V Trifásico</option>
+              <option value="220m">220V Monofásico</option>
+            </select>
+          </div>
+          <div class="fg"><label>Tipo de equipo</label>
+            <select id="va-t">
+              <option value="vfd">Variador de Velocidad (VFD)</option>
+              <option value="ss">Arrancador Suave</option>
+            </select>
+          </div>
+        </div>
+        <div class="r2">
+          <div class="fg"><label>Aplicación</label>
+            <select id="va-a">
+              <option value="gral">Maquinaria general / transportador</option>
+              <option value="bomb">Bomba / ventilador (par variable)</option>
+              <option value="comp">Compresor</option>
+              <option value="grua">Grúa / elevador</option>
+            </select>
+          </div>
+          <div class="fg"><label>Exigencia ambiental</label>
+            <select id="va-amb">
+              <option value="estandar">Estándar — interiores limpios</option>
+              <option value="severo">Severo — polvo, vibración, humedad</option>
+            </select>
+          </div>
+        </div>
+        <button class="btn" onclick="cVar()">🎛️ Dimensionar Equipo</button>
+        <div class="res" id="r4">
+          <div class="res-box">
+            <div class="rlabel">Equipo Recomendado</div>
+            <div class="rmain" id="r4m"></div>
+            <div class="rsub" id="r4s"></div>
+          </div>
+          <div id="r4r"></div>
+          <button class="btn-print" onclick="window.print()">🖨️ Imprimir / Exportar resultado</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── PANEL 5 · ILUMINACIÓN ── -->
+  <div class="pnl" id="p5">
+    <div class="card">
+      <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1565043666747-69f6646db940?w=900&q=80&fit=crop&hue-rotate=60')">
+        <div class="card-img-content" style="background:linear-gradient(to right,rgba(13,24,60,.92),rgba(30,60,140,.7))">
+          <div class="card-ico-big">💡</div>
+          <div class="card-img-txt">
+            <div class="card-ttl">Cálculo de Iluminación</div>
+            <div class="card-desc">Método de lúmenes — RETILAP Colombia — Número de luminarias por espacio</div>
+            <div class="brand-tag">🟡 Sylvania LED</div>
+          </div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="r2">
+          <div class="fg"><label>Tipo de espacio</label>
+            <select id="il-t">
+              <option value="of">Oficina / Área de trabajo</option>
+              <option value="bd">Bodega / Almacenamiento</option>
+              <option value="in">Industrial / Taller</option>
+              <option value="co">Comercial / Retail</option>
+              <option value="pa">Corredor / Pasillo</option>
+              <option value="pe">Parqueadero Exterior</option>
+              <option value="pi">Parqueadero Interior</option>
+              <option value="re">Sala de Reuniones</option>
+              <option value="ho">Hospital / Clínica</option>
+            </select>
+          </div>
+          <div class="fg"><label>Área del espacio (m²)</label><input type="number" id="il-a" value="50" min="1" step="1"></div>
+        </div>
+        <div class="r2">
+          <div class="fg"><label>Altura de montaje (m)</label><input type="number" id="il-h" value="3" min="1.5" max="25" step="0.5"></div>
+          <div class="fg"><label>Reflexión del local</label>
+            <select id="il-r">
+              <option value="0.75">Alta — Paredes blancas/claras</option>
+              <option value="0.65">Media — Colores neutros</option>
+              <option value="0.50">Baja — Colores oscuros / sucios</option>
+            </select>
+          </div>
+        </div>
+        <button class="btn" onclick="cIlum()">💡 Calcular Iluminación</button>
+        <div class="res" id="r5">
+          <div class="res-box">
+            <div class="rlabel">Resultado Iluminación</div>
+            <div class="rmain" id="r5m"></div>
+            <div class="rsub" id="r5s"></div>
+          </div>
+          <div id="r5r"></div>
+          <button class="btn-print" onclick="window.print()">🖨️ Imprimir / Exportar resultado</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ── PANEL 6 · CANALIZACIÓN DEXSON ── -->
+  <div class="pnl" id="p6">
+    <div class="card">
+      <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=900&q=80&fit=crop');background-color:#1a237e">
+        <div class="card-img-content" style="background:linear-gradient(to right,rgba(13,24,80,.92),rgba(30,47,160,.7))">
+          <div class="card-ico-big">📦</div>
+          <div class="card-img-txt">
+            <div class="card-ttl">Canalización Dexson</div>
+            <div class="card-desc">Dimensionamiento de canaletas — Llenado max. 40% NTC 2050 / RETIE</div>
+            <div class="brand-tag">🟢 Schneider Electric · Dexson</div>
+          </div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="r2">
+          <div class="fg"><label>Tipo de canaleta</label>
+            <select id="cn-tipo">
+              <option value="lisa">Lisa (residencial/comercial)</option>
+              <option value="ranurada">Ranurada (tableros/industrial)</option>
+            </select>
+          </div>
+          <div class="fg"><label>Cant. cables AWG 14</label><input type="number" id="cn-14" value="0" min="0" step="1"></div>
+        </div>
+        <div class="r2">
+          <div class="fg"><label>Cant. cables AWG 12</label><input type="number" id="cn-12" value="0" min="0" step="1"></div>
+          <div class="fg"><label>Cant. cables AWG 10</label><input type="number" id="cn-10" value="0" min="0" step="1"></div>
+        </div>
+        <div class="r2">
+          <div class="fg"><label>Cant. cables AWG 8</label><input type="number" id="cn-8" value="0" min="0" step="1"></div>
+          <div class="fg"><label>Cant. cables AWG 6</label><input type="number" id="cn-6" value="0" min="0" step="1"></div>
+        </div>
+        <div class="r2">
+          <div class="fg"><label>Cant. cables AWG 4</label><input type="number" id="cn-4" value="0" min="0" step="1"></div>
+          <div class="fg"><label>Cant. cables AWG 2</label><input type="number" id="cn-2" value="0" min="0" step="1"></div>
+        </div>
+        <button class="btn" onclick="cCanal()">📦 Dimensionar Canaleta</button>
+        <div class="res" id="r6">
+          <div class="res-box">
+            <div class="rlabel">Canaleta Recomendada</div>
+            <div class="rmain" id="r6m"></div>
+            <div class="rsub" id="r6s"></div>
+          </div>
+          <div id="r6r"></div>
+          <button class="btn-print" onclick="window.print()">🖨️ Imprimir / Exportar resultado</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── PANEL 7 · TUBERÍA Y BANDEJA ── -->
+  <div class="pnl" id="p7">
+    <div class="card">
+      <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=900&q=80&fit=crop');background-color:#1a237e">
+        <div class="card-img-content" style="background:linear-gradient(to right,rgba(13,24,80,.92),rgba(30,47,160,.7))">
+          <div class="card-ico-big">🔩</div>
+          <div class="card-img-txt">
+            <div class="card-ttl">Tubería y Bandeja Eléctrica</div>
+            <div class="card-desc">EMT / IMC Binson — Bandeja portacable — Llenado NTC 2050 / RETIE</div>
+            <div class="brand-tag"><img src="1-%20Logos%20proveedores%20a%20Color-20260331T150916Z-3-001/1-%20Logos%20proveedores%20a%20Color/Binson.png" alt="Binson" style="height:16px;vertical-align:middle"> Binson</div>
+          </div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="r2">
+          <div class="fg"><label>Tipo de canalización</label>
+            <select id="tb-tipo">
+              <option value="emt">Tubo EMT (pared delgada)</option>
+              <option value="imc">Tubo IMC (pared intermedia)</option>
+              <option value="bandeja">Bandeja portacable</option>
+            </select>
+          </div>
+          <div class="fg"><label>Cant. cables AWG 14</label><input type="number" id="tb-14" value="0" min="0" step="1"></div>
+        </div>
+        <div class="r2">
+          <div class="fg"><label>Cant. cables AWG 12</label><input type="number" id="tb-12" value="0" min="0" step="1"></div>
+          <div class="fg"><label>Cant. cables AWG 10</label><input type="number" id="tb-10" value="0" min="0" step="1"></div>
+        </div>
+        <div class="r2">
+          <div class="fg"><label>Cant. cables AWG 8</label><input type="number" id="tb-8" value="0" min="0" step="1"></div>
+          <div class="fg"><label>Cant. cables AWG 6</label><input type="number" id="tb-6" value="0" min="0" step="1"></div>
+        </div>
+        <div class="r2">
+          <div class="fg"><label>Cant. cables AWG 4</label><input type="number" id="tb-4" value="0" min="0" step="1"></div>
+          <div class="fg"><label>Cant. cables AWG 2</label><input type="number" id="tb-2" value="0" min="0" step="1"></div>
+        </div>
+        <div class="r2">
+          <div class="fg"><label>Cant. cables AWG 1/0</label><input type="number" id="tb-10a" value="0" min="0" step="1"></div>
+          <div class="fg"><label>Cant. cables AWG 4/0</label><input type="number" id="tb-40" value="0" min="0" step="1"></div>
+        </div>
+        <button class="btn" onclick="cTubo()">🔩 Dimensionar Tubería / Bandeja</button>
+        <div class="res" id="r7">
+          <div class="res-box">
+            <div class="rlabel">Tubería / Bandeja Recomendada</div>
+            <div class="rmain" id="r7m"></div>
+            <div class="rsub" id="r7s"></div>
+          </div>
+          <div id="r7r"></div>
+          <button class="btn-print" onclick="window.print()">🖨️ Imprimir / Exportar resultado</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div><!-- /wrap -->
+</div><!-- /calculadora -->
+
+<!-- DISCLAIMER -->
+<div style="background:#fffbeb;border-top:2px solid #fcd34d;border-bottom:2px solid #fcd34d;padding:12px 24px;text-align:center">
+  <p style="font-size:.75rem;color:#92400e;max-width:900px;margin:0 auto;line-height:1.6">
+    ⚠️ <strong>Aviso importante:</strong> Los resultados de esta calculadora son orientativos y de apoyo técnico. Siempre deben ser verificados y aprobados por un ingeniero eléctrico certificado antes de su implementación. Electroriente S.A.S. no se hace responsable por decisiones tomadas con base exclusiva en estos cálculos. Normas de referencia: NTC 2050, NEC y RETILAP Colombia.
+  </p>
+</div>
+
+<!-- ADMIN CATÁLOGO (oculto por defecto — acceso solo admin) -->
+<div class="cat-panel" id="admin-panel" style="display:none">
+  <div class="cat-panel-inner">
+    <div class="cat-panel-title">⚙️ Administrar Catálogo
+      <span id="cat-ver" style="font-weight:400;text-transform:none;font-size:.67rem;color:var(--sub);margin-left:4px"></span>
+    </div>
+    <div class="cat-stats-row" id="cat-stats"></div>
+    <div class="cat-actions">
+      <span class="cat-modo-lbl">Mostrar:</span>
+      <button class="cat-modo-btn on" data-modo="colombia"  onclick="setCatModo('colombia')">🇨🇴 Colombia</button>
+      <button class="cat-modo-btn"    data-modo="validados" onclick="setCatModo('validados')">✅ Solo validados</button>
+      <button class="cat-modo-btn"    data-modo="todos"     onclick="setCatModo('todos')">🌐 Todos</button>
+    </div>
+    <div class="cat-actions">
+      <button class="cat-import-btn" onclick="catImportJSON()">📂 Cargar JSON</button>
+      <button class="cat-import-btn" onclick="catImportCSV()">📊 Cargar CSV</button>
+      <button class="cat-import-btn" onclick="CM.exportJSON()">⬇️ Exportar JSON actual</button>
+      <button class="cat-import-btn" onclick="CM.exportSchemaCSV()">📋 Descargar schema CSV</button>
+    </div>
+    <div class="cat-status" id="cat-status"></div>
+    <div class="cat-schema-note">
+      <strong>Campos del catálogo:</strong> id · marca · linea · categoria · subcategoria · familia · descripcion · nivel <em>(economico / estandar / premium)</em> · prioridad · colombia <em>(si / no / pendiente)</em> · validado_electroriente <em>(true/false)</em> · estado <em>(activo / provisional / descontinuado / pendiente_validacion)</em> · obs_comercial · obs_tecnica · fuente · fecha_revision · specs <em>(JSON)</em> · rango_aplicacion · por_que<br>
+      <strong style="color:#166534">✅ Cat\u00e1logo v2.0 validado desde ERP Odoo.</strong> Para actualizar, importe un nuevo JSON o CSV con el esquema indicado.
+    </div>
+  </div>
+</div>
+
+<!-- CTA SECTION -->
+  <section class="cta-section" id="cotizar">
+  <div class="cta-bg" style="background-image:url('https://www.electroriente.com.co/web/image/82061-e417ba08/53%20A%C3%91OS.webp')"></div>
+  <div class="cta-inner">
+    <div class="cta-text">
+      <div class="cta-title">¿Tienes un proyecto eléctrico?<br>Nuestros expertos te asesoran.</div>
+      <p class="cta-sub">Con 54 años de experiencia en el sector eléctrico en Bucaramanga y Santander, en Electroriente te ayudamos a seleccionar los mejores materiales y equipos para tu instalación residencial, comercial o industrial.</p>
+      <div class="cta-contacts">
+        <a class="cta-btn cta-btn-main" href="mailto:ventas@electroriente.com.co">✉️ Cotizar por correo</a>
+        <a class="cta-btn cta-btn-sec" href="tel:+573107255623">📞 Llamar ahora</a>
+        <a class="cta-btn cta-btn-sec" href="https://wa.me/573107255623" target="_blank">💬 WhatsApp</a>
+      </div>
+    </div>
+    <div class="cta-cards">
+      <div class="cta-card">
+        <div class="cta-card-ico">🌐</div>
+        <div class="cta-card-txt">
+          <div class="tit">Sitio web</div>
+          <div class="val">www.electroriente.com.co</div>
+        </div>
+      </div>
+      <div class="cta-card">
+        <div class="cta-card-ico">🕐</div>
+        <div class="cta-card-txt">
+          <div class="tit">Horario de atención</div>
+          <div class="val">Lun–Vie 7:45–12:00 / 1:45–5:00pm<br>Sáb 8:00–12:00m</div>
+        </div>
+      </div>
+      <div class="cta-card">
+        <div class="cta-card-ico">📍</div>
+        <div class="cta-card-txt">
+          <div class="tit">Ubicación</div>
+          <div class="val">Calle 36 #16-18, Bucaramanga</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="ftr-inner">
+    <div class="ftr-top">
+      <div class="ftr-logo-wrap">
+        <img class="ftr-logo-img" src="https://www.electroriente.com.co/web/image/website/1/logo/Electroriente" onerror="this.src='LOGOS_ELECTRORIENTE_NUEVO_COLOR01_1.png';this.style.filter='brightness(0) invert(1)'" alt="Electroriente S.A.S.">
+        <div class="ftr-tagline">54 años de experiencia en materiales<br>eléctricos en Bucaramanga y Santander</div>
+        <a class="ftr-web" href="https://www.electroriente.com.co" target="_blank">🌐 www.electroriente.com.co</a>
+      </div>
+      <div class="ftr-col">
+        <div class="ftr-col-title">Contacto</div>
+        <div class="ftr-item">📞 +57 310 7255623</div>
+        <div class="ftr-item">✉️ ventas@electroriente.com.co</div>
+        <div class="ftr-item">📍 Calle 36 #16-18, Bucaramanga</div>
+      </div>
+      <div class="ftr-col">
+        <div class="ftr-col-title">Horario</div>
+        <div class="ftr-item">Lun–Vie: 7:45–12:00 / 1:45–5:00pm</div>
+        <div class="ftr-item">Sábado: 8:00–12:00m</div>
+      </div>
+      <div class="ftr-col">
+        <div class="ftr-col-title">Marcas representadas</div>
+        <div class="ftr-item">🟢 Schneider Electric · Dexson</div>
+        <div class="ftr-item">🔵 Prysmian Group · Procables</div>
+        <div class="ftr-item">🟡 Sylvania LED</div>
+        <div class="ftr-item">⚪ Binson</div>
+      </div>
+    </div>
+    <div class="ftr-bottom">
+      <div>
+        <div class="ftr-copy">© 2026 Electroriente S.A.S. · Calculadora Eléctrica Profesional · Normas NTC 2050 / NEC / RETILAP</div>
+        <div class="ftr-dev">Desarrollada por Electroriente S.A.S. &nbsp;<span id="admin-trigger" style="cursor:pointer;opacity:.35;font-size:.6rem" title="Acceso administrador">🔒</span></div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOTANTE -->
+<a class="wa-float" href="https://wa.me/573107255623?text=Hola%20Electroriente%2C%20usé%20su%20calculadora%20eléctrica%20y%20quiero%20cotizar." target="_blank" title="Chatear por WhatsApp">💬</a>
+
+<script>
+// ── VALIDACIÓN ──
+function showErr(resId,msg){
+  const r=document.getElementById(resId);
+  r.className='res on';
+  r.innerHTML=`<div class="al bad">⚠️ ${msg}</div>`;
+}
+function chk(val,min,max,label,resId){
+  if(isNaN(val)||val===''||val===null){showErr(resId,`Ingresa un valor válido en "${label}".`);return false;}
+  if(min!==null&&val<=min){showErr(resId,`"${label}" debe ser mayor a ${min}.`);return false;}
+  if(max!==null&&val>max){showErr(resId,`"${label}" no puede superar ${max}.`);return false;}
+  return true;
+}
+
+// disp: 1=stock Electroriente, 2=bajo pedido, 0=no comercial Colombia
+const CB=[
+  {awg:'14',  mm2:2.08,  cu:15,  al:0,   r:8.450, disp:1, ref:'THHN/THWN-2 Procables'},
+  {awg:'12',  mm2:3.31,  cu:20,  al:0,   r:5.210, disp:1, ref:'THHN/THWN-2 Procables'},
+  {awg:'10',  mm2:5.26,  cu:30,  al:0,   r:3.280, disp:1, ref:'THHN/THWN-2 Procables'},
+  {awg:'8',   mm2:8.37,  cu:40,  al:40,  r:2.060, disp:1, ref:'THHN Procables'},
+  {awg:'6',   mm2:13.3,  cu:55,  al:50,  r:1.290, disp:1, ref:'THWN/THWN-2 Procables'},
+  {awg:'4',   mm2:21.2,  cu:70,  al:65,  r:0.812, disp:1, ref:'THHN/THWN-2 Procables'},
+  {awg:'3',   mm2:26.7,  cu:85,  al:75,  r:0.644, disp:0, ref:'No comercial en Colombia'},
+  {awg:'2',   mm2:33.6,  cu:95,  al:90,  r:0.512, disp:2, ref:'THHN Cu — bajo pedido'},
+  {awg:'1',   mm2:42.4,  cu:110, al:100, r:0.406, disp:0, ref:'No comercial en Colombia'},
+  {awg:'1/0', mm2:53.5,  cu:125, al:120, r:0.321, disp:1, ref:'THHN/THWN-2 Procables'},
+  {awg:'2/0', mm2:67.4,  cu:145, al:135, r:0.254, disp:2, ref:'THHN Cu — bajo pedido'},
+  {awg:'3/0', mm2:85.0,  cu:165, al:155, r:0.201, disp:2, ref:'THHN Cu — bajo pedido'},
+  {awg:'4/0', mm2:107,   cu:195, al:180, r:0.160, disp:1, ref:'THHN/THWN-2 Procables'},
+  {awg:'250MCM',mm2:127, cu:215, al:205, r:0.134, disp:1, ref:'THHN Procables'},
+  {awg:'300MCM',mm2:152, cu:240, al:230, r:0.112, disp:2, ref:'THWN — bajo pedido'},
+  {awg:'350MCM',mm2:177, cu:260, al:250, r:0.0962,disp:2, ref:'THWN — bajo pedido'},
+  {awg:'500MCM',mm2:253, cu:310, al:295, r:0.0674,disp:2, ref:'THHN/THWN — bajo pedido'},
+];
+const vdSel=document.getElementById('vd-awg');
+CB.forEach((c,i)=>{
+  if(c.disp===0)return;
+  const o=document.createElement('option');o.value=i;
+  const tag=c.disp===1?'\u2705 ':'\uD83D\uDCE6 ';
+  o.textContent=tag+`AWG ${c.awg}  (${c.mm2} mm\u00B2)${c.disp===2?' — Bajo pedido':''}`;
+  vdSel.appendChild(o);
+});
+vdSel.value=2;
+
+const V_map={'1f120':120,'1f220':220,'3f220':220,'3f440':440};
+const tri=s=>s.startsWith('3f'),gV=s=>V_map[s]||220;
+const f2=n=>n.toFixed(2),f1=n=>n.toFixed(1),f3=n=>n.toFixed(3);
+
+function T(n){
+  document.querySelectorAll('.tab').forEach((t,i)=>t.classList.toggle('on',i===n));
+  document.querySelectorAll('.pnl').forEach((p,i)=>p.classList.toggle('on',i===n));
+  document.getElementById('calculadora').scrollIntoView({behavior:'smooth'});
+}
+function toggleC(){
+  const p=document.getElementById('c-tipo').value==='pot';
+  document.getElementById('c-pr').style.display=p?'block':'none';
+  document.getElementById('c-ar').style.display=p?'none':'grid';
+}
+const LOGO_PATH='1-%20Logos%20proveedores%20a%20Color-20260331T150916Z-3-001/1-%20Logos%20proveedores%20a%20Color/';
+const BRAND_LOGOS={
+  'Schneider Electric':LOGO_PATH+'logo-schneider-electric.png',
+  'Prysmian Group':LOGO_PATH+'Procables%20Prysmian_Logo.svg.png',
+  'Sylvania':LOGO_PATH+'Logo-Sylvania-verde-01.png',
+  'Binson':LOGO_PATH+'Binson.png',
+  'Dexson':LOGO_PATH+'logo-schneider-electric.png'
+};
+function brandLogo(marca){
+  var src=BRAND_LOGOS[marca];
+  if(!src)return'';
+  return'<img src="'+src+'" alt="'+marca+'" style="height:20px;max-width:80px;object-fit:contain;display:block;opacity:.85" onerror="this.style.display=\'none\'">';
+}
+function recBox(t,prod,det){
+  const D={
+    pry:{img:LOGO_PATH+'Procables%20Prysmian_Logo.svg.png',lbl:'Prysmian Group (Procables)',cls:'ico-bl'},
+    sch:{img:LOGO_PATH+'logo-schneider-electric.png',lbl:'Schneider Electric',cls:'ico-gr'},
+    syl:{img:LOGO_PATH+'Logo-Sylvania-verde-01.png',lbl:'Sylvania LED',cls:'ico-ye'}
+  };
+  const d=D[t];
+  return `<div class="rec"><div class="rec-ico ${d.cls}"><img src="${d.img}" alt="${d.lbl}" style="height:28px;max-width:38px;object-fit:contain;display:block"></div><div><div class="rbrand">${d.lbl}</div><div class="rprod">${prod}</div><div class="rdet">${det}</div></div></div>`;
+}
+function cCable(){
+  const tipo=document.getElementById('c-tipo').value,sys=document.getElementById('c-sis').value,mat=document.getElementById('c-mat').value,fac=parseFloat(document.getElementById('c-load').value),V=gV(sys),is3=tri(sys);
+  let I;
+  if(tipo==='pot'){
+    let P=parseFloat(document.getElementById('c-pv').value);
+    const pu=document.getElementById('c-pu').value,fp=parseFloat(document.getElementById('c-fp').value),ef=parseFloat(document.getElementById('c-ef').value);
+    if(!chk(P,0,null,'Potencia','r0'))return;
+    if(!chk(fp,0,1,'Factor de Potencia','r0'))return;
+    if(pu==='HP')P*=0.7457;else if(pu==='W')P/=1000;
+    I=is3?(P*1000)/(Math.sqrt(3)*V*fp*ef):(P*1000)/(V*fp*ef);
+  }else{
+    I=parseFloat(document.getElementById('c-av').value);
+    if(!chk(I,0,null,'Corriente','r0'))return;
+  }
+  const Id=I*fac;
+  let found=CB.find(c=>(mat==='Cu'?c.cu:c.al)>=Id);
+  document.getElementById('r0').className='res on';
+  if(!found){document.getElementById('r0m').textContent='> 500MCM';document.getElementById('r0s').textContent=`Corriente de diseño: ${f1(Id)} A — Requiere conductores en paralelo.`;document.getElementById('r0r').innerHTML=recBox('pry','Conductor especial','Para corrientes >310A contacte a Electroriente para asesoría especializada.');return;}
+  // Si el calibre no es comercial (disp:0), saltar al siguiente disponible
+  let nota_salto='';
+  if(found.disp===0){
+    const idx=CB.indexOf(found);
+    const next=CB.slice(idx+1).find(c=>c.disp>0&&(mat==='Cu'?c.cu:c.al)>=Id);
+    if(next){nota_salto=`<br><div class="al warn">⚠️ AWG ${found.awg} no es comercial en Colombia. Se recomienda AWG ${next.awg} (${next.mm2} mm²) como alternativa disponible.</div>`;found=next;}
+  }
+  const amp=mat==='Cu'?found.cu:found.al;
+  const dispTxt=found.disp===1?'✅ Disponible en Electroriente — Procables Colombia · Stock por metro o rollo':'📦 Disponible bajo pedido en Electroriente — consultar tiempos de entrega';
+  document.getElementById('r0m').textContent=`AWG ${found.awg} — ${found.mm2} mm²`;
+  document.getElementById('r0s').innerHTML=`I nominal: <strong>${f1(I)} A</strong> &nbsp;·&nbsp; I diseño: <strong>${f1(Id)} A</strong> &nbsp;·&nbsp; Ampacidad: <strong>${amp} A</strong><br>Material: ${mat} &nbsp;·&nbsp; ${is3?'Trifásico':'Monofásico'} ${V}V`;
+  const esMCM=['250MCM','300MCM','350MCM','500MCM'].includes(found.awg);
+  document.getElementById('r0r').innerHTML=recBox('pry',esMCM?`THHN ${found.awg} ${mat} — Cable de Potencia`:`THHN/THWN-2 AWG ${found.awg} ${mat==='Cu'?'Cobre':'Aluminio'} 90°C`,`Aislamiento PVC/Nylon · 600V · 90°C · Norma NTC 2050 / NEC<br>${dispTxt}`)+nota_salto;
+}
+// ════════════════════════════════════════════════════════════════════
+// CATALOGO VALIDADO ELECTRORIENTE v2.0 — desde ERP Odoo
+// 12 familias reales con stock en Electroriente S.A.S., Bucaramanga
+// Actualizar via panel "Administrar Catalogo" o importando CSV/JSON
+// ════════════════════════════════════════════════════════════════════
+const CATALOG_VERSION='2.0-validado';
+const CATALOG_INICIAL=[
+  // ── BREAKERS ENCHUFABLES ──────────────────────────────────────────
+  {id:'FAM-BRK-001',marca:'Schneider Electric',linea:'Homeline',
+   categoria:'Proteccion',subcategoria:'Breaker enchufable',familia:'Homeline HOM',
+   descripcion:'Termomagnetico enchufable 120/240V 10kA — residencial, tableros Homeline',
+   nivel:'economico',prioridad:1,colombia:'si',validado_electroriente:true,
+   estado:'validado',
+   obs_comercial:'Disponible en Electroriente — stock permanente. Variantes GFCI disponibles.',
+   obs_tecnica:'Solo para tableros Homeline. 120/240V, 10kA. GFCI en 1P y 2P.',
+   fuente:'ERP Odoo Electroriente',fecha_revision:'2026-04',
+   specs:{polos_disp:[1,2,3],voltaje_max:240,curvas:['C'],poder_corte_kA:10,
+          montaje:'enchufable',In_rangos:[15,20,30,40,50,60,70,80,100],ref_base:'HOM'},
+   rango_aplicacion:'15-100 A — circuitos residenciales y comerciales, tableros Homeline',
+   por_que:'Instalacion rapida enchufable, amplia gama 15-100A, ideal proyectos residenciales'},
+
+  // ── BREAKERS MODULARES RIEL DIN ──────────────────────────────────
+  {id:'FAM-BRK-002',marca:'Schneider Electric',linea:'Easy9',
+   categoria:'Proteccion',subcategoria:'Breaker modular',familia:'Easy9 EZ K60N',
+   descripcion:'Termomagnetico modular riel DIN curva C 6kA — residencial y comercial',
+   nivel:'economico',prioridad:2,colombia:'si',validado_electroriente:true,
+   estado:'validado',
+   obs_comercial:'Disponible en Electroriente — linea economica con stock permanente',
+   obs_tecnica:'Curva C unicamente. 6 kA. Cargas resistivas y mixtas, no motores pesados.',
+   fuente:'ERP Odoo Electroriente',fecha_revision:'2026-04',
+   specs:{polos_disp:[1,2,3],voltaje_max:415,curvas:['C'],poder_corte_kA:6,
+          montaje:'riel DIN',In_rangos:[6,10,16,20,25,32,40,50,63],ref_base:'EZ9F56'},
+   rango_aplicacion:'6-63 A — circuitos residenciales y comerciales en tableros riel DIN',
+   por_que:'Opcion economica Schneider en riel DIN, amplio rango 6-63A'},
+
+  {id:'FAM-BRK-003',marca:'Schneider Electric',linea:'Acti9',
+   categoria:'Proteccion',subcategoria:'Breaker modular',familia:'iC60N',
+   descripcion:'Termomagnetico modular industrial curvas B/C/D — 6 kA, hasta 4P',
+   nivel:'estandar',prioridad:1,colombia:'si',validado_electroriente:true,
+   estado:'validado',
+   obs_comercial:'Disponible en Electroriente — linea principal para proyectos industriales',
+   obs_tecnica:'Curva D para motores. 1P a 4P. Desde 0.5A para instrumentacion.',
+   fuente:'ERP Odoo Electroriente',fecha_revision:'2026-04',
+   specs:{polos_disp:[1,2,3,4],voltaje_max:415,curvas:['B','C','D'],poder_corte_kA:6,
+          montaje:'riel DIN',In_rangos:[0.5,1,2,3,4,6,10,16,20,25,32,40,50,63],ref_base:'A9F74'},
+   rango_aplicacion:'0.5-63 A — tableros industriales, motores, instrumentacion',
+   por_que:'Curva D para motores, rango desde 0.5A, hasta 4P — referencia industrial Schneider'},
+
+  {id:'FAM-BRK-004',marca:'Schneider Electric',linea:'Acti9',
+   categoria:'Proteccion',subcategoria:'Breaker modular',familia:'C120N',
+   descripcion:'Termomagnetico modular alta capacidad 80-125A riel DIN — 10 kA',
+   nivel:'estandar',prioridad:2,colombia:'si',validado_electroriente:true,
+   estado:'validado',
+   obs_comercial:'Disponible en Electroriente — alimentadores principales 80-125A',
+   obs_tecnica:'10 kA. Para alimentadores donde iC60N (63A max) queda corto.',
+   fuente:'ERP Odoo Electroriente',fecha_revision:'2026-04',
+   specs:{polos_disp:[2,3,4],voltaje_max:415,curvas:['C'],poder_corte_kA:10,
+          montaje:'riel DIN',In_rangos:[80,100,125],ref_base:'A9N18'},
+   rango_aplicacion:'80-125 A — alimentadores principales en tableros riel DIN',
+   por_que:'Proteccion riel DIN hasta 125A con 10 kA, sin saltar a caja moldeada'},
+
+  // ── BREAKERS CAJA MOLDEADA ────────────────────────────────────────
+  {id:'FAM-BRK-005',marca:'Schneider Electric',linea:'Compact NSX',
+   categoria:'Proteccion',subcategoria:'Breaker caja moldeada',familia:'NSX100F',
+   descripcion:'Interruptor caja moldeada 3P 36kA — tableros industriales, 16-100A',
+   nivel:'premium',prioridad:1,colombia:'si',validado_electroriente:true,
+   estado:'validado',
+   obs_comercial:'Disponible en Electroriente — unidades TMD y MA en stock',
+   obs_tecnica:'36 kA a 220V. TMD: termomagnetico ajustable. MA: magnetico solo (motores).',
+   fuente:'ERP Odoo Electroriente',fecha_revision:'2026-04',
+   specs:{polos_disp:[3],voltaje_max:690,curvas:['TM-D','MA'],poder_corte_kA:36,
+          montaje:'fijo',In_rangos:[16,50,100],ref_base:'C10F3'},
+   rango_aplicacion:'16-100 A — alimentadores industriales, proteccion de motores grandes',
+   por_que:'36 kA de ruptura, unidad MA disponible para proteccion de motores'},
+
+  {id:'FAM-BRK-006',marca:'Schneider Electric',linea:'Compact CVS',
+   categoria:'Proteccion',subcategoria:'Breaker caja moldeada',familia:'CVS630N',
+   descripcion:'Interruptor caja moldeada gran capacidad 3P 630A 36kA — acometidas principales',
+   nivel:'premium',prioridad:2,colombia:'si',validado_electroriente:true,
+   estado:'validado',
+   obs_comercial:'Disponible en Electroriente — verificar tiempo de entrega',
+   obs_tecnica:'CVS630N: 36 kA. Acometidas principales de plantas y edificios.',
+   fuente:'ERP Odoo Electroriente',fecha_revision:'2026-04',
+   specs:{polos_disp:[3],voltaje_max:690,curvas:['TM-D'],poder_corte_kA:36,
+          montaje:'fijo',In_rangos:[630],ref_base:'LV5633'},
+   rango_aplicacion:'630 A — acometidas principales industriales y edificios',
+   por_que:'Acometida principal de gran capacidad con 36 kA de poder de corte'},
+
+  // ── TOTALIZADORES GOPACT ──────────────────────────────────────────
+  {id:'FAM-BRK-007',marca:'Schneider Electric',linea:'GoPact',
+   categoria:'Proteccion',subcategoria:'Breaker totalizador',familia:'GoPact 12',
+   descripcion:'Totalizador compacto 3P 16-125A — tableros de distribucion, reemplazo Easy9/NSX',
+   nivel:'economico',prioridad:0,colombia:'si',validado_electroriente:true,
+   estado:'validado',
+   obs_comercial:'Disponible en Electroriente — alto stock, linea principal de totalizadores',
+   obs_tecnica:'G12E: fijo, 10kA. G12F: ajustable, 30kA. Formato compacto riel DIN.',
+   fuente:'ERP Odoo Electroriente',fecha_revision:'2026-04',
+   specs:{polos_disp:[3],voltaje_max:690,curvas:['TM-D'],poder_corte_kA:10,
+          montaje:'fijo',In_rangos:[16,20,25,32,40,50,63,80,100,125],ref_base:'G12E/G12F'},
+   rango_aplicacion:'16-125 A — totalizadores de tableros de distribucion',
+   por_que:'Totalizador compacto y economico, reemplazo moderno de la linea Easy9 y NSX en tableros'},
+
+  {id:'FAM-BRK-008',marca:'Schneider Electric',linea:'GoPact',
+   categoria:'Proteccion',subcategoria:'Breaker totalizador',familia:'GoPact 20/40',
+   descripcion:'Totalizador 3P 160-400A 50kA — acometidas principales y alimentadores',
+   nivel:'estandar',prioridad:0,colombia:'si',validado_electroriente:true,
+   estado:'validado',
+   obs_comercial:'Disponible en Electroriente — consultar stock por amperaje',
+   obs_tecnica:'G20B: 160-200A. G40N: 250-400A, 50kA. Ajustable.',
+   fuente:'ERP Odoo Electroriente',fecha_revision:'2026-04',
+   specs:{polos_disp:[3],voltaje_max:690,curvas:['TM-D'],poder_corte_kA:50,
+          montaje:'fijo',In_rangos:[160,200,250,320,400],ref_base:'G20B/G40N'},
+   rango_aplicacion:'160-400 A — acometidas principales y alimentadores de alta capacidad',
+   por_que:'Totalizador moderno con 50kA, alternativa compacta a NSX para acometidas'},
+
+  // ── VARIADORES DE FRECUENCIA ──────────────────────────────────────
+  {id:'FAM-VFD-001',marca:'Schneider Electric',linea:'Altivar',
+   categoria:'Variacion de velocidad',subcategoria:'Variador de frecuencia',familia:'Altivar 12',
+   descripcion:'VFD compacto mono/trifasico 220V — bombas y ventiladores livianos, 0.37-4 kW',
+   nivel:'economico',prioridad:1,colombia:'si',validado_electroriente:true,
+   estado:'validado',
+   obs_comercial:'Disponible en Electroriente — stock en potencias principales',
+   obs_tecnica:'Entrada monofasica o trifasica 220V. Par variable. Sin bus de campo.',
+   fuente:'ERP Odoo Electroriente',fecha_revision:'2026-04',
+   specs:{tipo:'vfd',alimentacion:['1f220','3f220'],kW_min:0.37,kW_max:4.0,
+          funciones:'Rampa, PID basico, proteccion de motor',
+          IP:'IP20',ambiente:'estandar',ref_base:'ATV12',aplic:['bomb']},
+   rango_aplicacion:'0.37-4 kW mono/tri 220V — bombas y ventiladores livianos',
+   por_que:'Compacto y economico — ideal para bombas y ventiladores hasta 4 kW'},
+
+  {id:'FAM-VFD-002',marca:'Schneider Electric',linea:'Altivar',
+   categoria:'Variacion de velocidad',subcategoria:'Variador de frecuencia',familia:'Altivar 320',
+   descripcion:'VFD multiproposito 220V/440V — maquinaria industrial, 0.37-22 kW',
+   nivel:'estandar',prioridad:1,colombia:'si',validado_electroriente:true,
+   estado:'validado',
+   obs_comercial:'Disponible en Electroriente — amplio stock en 220V y 440V',
+   obs_tecnica:'Mono 220V, tri 220V y tri 440V. Opcion IP65. Modbus integrado.',
+   fuente:'ERP Odoo Electroriente',fecha_revision:'2026-04',
+   specs:{tipo:'vfd',alimentacion:['1f220','3f220','3f440'],kW_min:0.37,kW_max:22,
+          funciones:'Rampa, PID, frenado dinamico, multipump, Modbus',
+          IP:'IP20 / IP65 opcion',ambiente:'estandar',ref_base:'ATV320',aplic:['gral','bomb','comp']},
+   rango_aplicacion:'0.37-22 kW mono/tri 220V y tri 440V — maquinaria, bombas, ventiladores',
+   por_que:'Versatil para aplicaciones industriales generales con amplia gama de potencias'},
+
+  {id:'FAM-VFD-003',marca:'Schneider Electric',linea:'Altivar',
+   categoria:'Variacion de velocidad',subcategoria:'Variador de frecuencia',familia:'Altivar 610',
+   descripcion:'VFD para HVAC y bombeo 440V — eficiencia energetica, 15-55 kW',
+   nivel:'estandar',prioridad:2,colombia:'si',validado_electroriente:true,
+   estado:'validado',
+   obs_comercial:'Disponible en Electroriente — consultar stock por potencia',
+   obs_tecnica:'Optimizado para bombas y ventiladores. PID integrado. Funciones multipump.',
+   fuente:'ERP Odoo Electroriente',fecha_revision:'2026-04',
+   specs:{tipo:'vfd',alimentacion:['3f440'],kW_min:15,kW_max:55,
+          funciones:'PID integrado, multipump, bypass bomba seca, eficiencia energetica',
+          IP:'IP20',ambiente:'estandar',ref_base:'ATV610',aplic:['bomb']},
+   rango_aplicacion:'15-55 kW tri 440V — bombeo, HVAC, ventilacion industrial',
+   por_que:'Especializado en HVAC y bombeo con funciones de eficiencia energetica'},
+
+  {id:'FAM-VFD-004',marca:'Schneider Electric',linea:'Altivar',
+   categoria:'Variacion de velocidad',subcategoria:'Variador de frecuencia',familia:'Altivar 630',
+   descripcion:'VFD alto desempeno 220V/440V — procesos industriales, 0.75-250 kW',
+   nivel:'premium',prioridad:1,colombia:'si',validado_electroriente:true,
+   estado:'validado',
+   obs_comercial:'Disponible en Electroriente — amplia gama hasta 250 kW',
+   obs_tecnica:'Control vectorial sin encoder. STO integrado. Ethernet nativo.',
+   fuente:'ERP Odoo Electroriente',fecha_revision:'2026-04',
+   specs:{tipo:'vfd',alimentacion:['3f220','3f440'],kW_min:0.75,kW_max:250,
+          funciones:'Control vectorial, PID avanzado, frenado, STO, Ethernet, multipump',
+          IP:'IP20 / IP21 opcion',ambiente:'severo',ref_base:'ATV630',aplic:['gral','bomb','comp','grua']},
+   rango_aplicacion:'0.75-250 kW tri 220V/440V — procesos industriales, bombas, compresores',
+   por_que:'Alto desempeno con control vectorial para procesos industriales exigentes'},
+
+  {id:'FAM-VFD-005',marca:'Schneider Electric',linea:'Altivar',
+   categoria:'Variacion de velocidad',subcategoria:'Variador de frecuencia',familia:'Altivar 930',
+   descripcion:'VFD premium alta potencia 220V/440V — industria pesada, 0.75-315 kW',
+   nivel:'premium',prioridad:2,colombia:'si',validado_electroriente:true,
+   estado:'validado',
+   obs_comercial:'Disponible en Electroriente — consultar tiempos para potencias altas',
+   obs_tecnica:'Control vectorial con/sin encoder. STO SIL3. EtherNet/IP nativo.',
+   fuente:'ERP Odoo Electroriente',fecha_revision:'2026-04',
+   specs:{tipo:'vfd',alimentacion:['3f220','3f440'],kW_min:0.75,kW_max:315,
+          funciones:'Control vectorial, encoder, PID avanzado, STO SIL3, EtherNet/IP',
+          IP:'IP00 / IP21 opcion',ambiente:'severo',ref_base:'ATV930',aplic:['gral','bomb','comp','grua']},
+   rango_aplicacion:'0.75-315 kW tri 220V/440V — gruas, compresores, extrusoras, mineria',
+   por_que:'Maxima performance para industria pesada con seguridad SIL3'},
+
+  // ── ARRANCADORES SUAVES ───────────────────────────────────────────
+  {id:'FAM-ARR-001',marca:'Schneider Electric',linea:'Altistart',
+   categoria:'Variacion de velocidad',subcategoria:'Arrancador suave',familia:'Altistart 22',
+   descripcion:'Arrancador suave trifasico 220/440V — 17 a 320 A FLA',
+   nivel:'estandar',prioridad:1,colombia:'si',validado_electroriente:true,
+   estado:'validado',
+   obs_comercial:'Disponible en Electroriente — amplio stock de 17A a 320A',
+   obs_tecnica:'Proteccion de sobrecarga integrada. Arranque y paro suave.',
+   fuente:'ERP Odoo Electroriente',fecha_revision:'2026-04',
+   specs:{tipo:'soft',voltaje:[220,440],A_min:17,A_max:320,
+          funciones:'Arranque suave, paro suave, proteccion sobrecarga integrada',ref_base:'ATS22'},
+   rango_aplicacion:'17-320 A FLA — motores trifasicos 220V/440V',
+   por_que:'Reduce corriente de arranque, proteccion integrada, instalacion simple'},
+
+  {id:'FAM-ARR-002',marca:'Schneider Electric',linea:'Altistart',
+   categoria:'Variacion de velocidad',subcategoria:'Arrancador suave',familia:'Altistart 430',
+   descripcion:'Arrancador suave compacto 208-600V — 32 a 47 A FLA',
+   nivel:'economico',prioridad:2,colombia:'si',validado_electroriente:true,
+   estado:'validado',
+   obs_comercial:'Disponible en Electroriente — stock en 32A y 47A',
+   obs_tecnica:'Compacto. Rango de voltaje 208-600V. Alternativa economica al ATS22.',
+   fuente:'ERP Odoo Electroriente',fecha_revision:'2026-04',
+   specs:{tipo:'soft',voltaje:[220,440,600],A_min:32,A_max:47,
+          funciones:'Arranque suave, paro suave, proteccion basica',ref_base:'ATS430'},
+   rango_aplicacion:'32-47 A FLA — motores trifasicos 208-600V',
+   por_que:'Alternativa compacta y economica para arranque suave de motores medianos'},
+
+  {id:'FAM-ARR-003',marca:'Schneider Electric',linea:'Altistart',
+   categoria:'Variacion de velocidad',subcategoria:'Arrancador suave',familia:'Altistart 480',
+   descripcion:'Arrancador suave avanzado 208-690V — 32 a 410 A FLA',
+   nivel:'premium',prioridad:2,colombia:'si',validado_electroriente:true,
+   estado:'validado',
+   obs_comercial:'Disponible en Electroriente — rango completo 32-410A',
+   obs_tecnica:'Control torque avanzado. Rango de voltaje amplio 208-690V.',
+   fuente:'ERP Odoo Electroriente',fecha_revision:'2026-04',
+   specs:{tipo:'soft',voltaje:[220,440,690],A_min:32,A_max:410,
+          funciones:'Arranque suave, control de torque, proteccion avanzada, cascada bombas',ref_base:'ATS480'},
+   rango_aplicacion:'32-410 A FLA — motores trifasicos 208-690V',
+   por_que:'Control de torque avanzado y rango de voltaje amplio para industria pesada'}
+];
+
+// ════════════════════════════════════════════════════════════════════
+// CATALOG MANAGER
+// ════════════════════════════════════════════════════════════════════
+const CM={
+  _data:[...CATALOG_INICIAL],
+
+  loadJSON(arr){
+    if(!Array.isArray(arr))throw new Error('El JSON debe ser un array de familias');
+    this._data=arr;this._notify(arr.length,'JSON');
+  },
+
+  loadCSV(txt){
+    const lines=txt.trim().split('\n');
+    const hdrs=lines[0].split(',').map(h=>h.trim().replace(/^"|"$/g,''));
+    const arr=lines.slice(1).filter(l=>l.trim()).map(line=>{
+      const vals=this._parseLine(line);const obj={};
+      hdrs.forEach((h,i)=>{
+        let v=(vals[i]||'').trim().replace(/^"|"$/g,'');
+        if(h==='specs'){try{v=JSON.parse(v);}catch(e){v={};}}
+        if(h==='validado_electroriente')v=(v==='true'||v==='1');
+        if(h==='prioridad')v=parseInt(v)||1;
+        obj[h]=v;
+      });return obj;
+    });
+    this._data=arr;this._notify(arr.length,'CSV');
+  },
+
+  _parseLine(line){
+    const r=[];let cur='',q=false;
+    for(let i=0;i<line.length;i++){
+      if(line[i]==='"'){q=!q;}
+      else if(line[i]===','&&!q){r.push(cur);cur='';}
+      else cur+=line[i];
+    }r.push(cur);return r;
+  },
+
+  _notify(n,tipo){
+    const el=document.getElementById('cat-status');
+    if(el)el.innerHTML='&#x2705; Catalogo cargado desde '+tipo+': <strong>'+n+' familias</strong>';
+    this._stats();
+  },
+
+  _stats(){
+    const d=this._data;
+    const val=d.filter(p=>p.validado_electroriente&&p.colombia==='si').length;
+    const pend=d.filter(p=>p.colombia==='pendiente').length;
+    const no_=d.filter(p=>p.colombia==='no').length;
+    const prov=d.filter(p=>p.estado==='provisional').length;
+    const el=document.getElementById('cat-stats');
+    if(el)el.innerHTML=
+      '<span class="cstat ok">'+val+' validados</span>'+
+      '<span class="cstat warn">'+pend+' pendientes</span>'+
+      '<span class="cstat gray">'+no_+' no aplicables</span>'+
+      '<span class="cstat prov">'+prov+' provisionales</span>';
+    const ver=document.getElementById('cat-ver');
+    if(ver)ver.textContent=CATALOG_VERSION+' \xB7 '+d.length+' familias \xB7 '+new Date().toLocaleDateString('es-CO');
+  },
+
+  query(f){
+    f=f||{};
+    const modo=f.modo||CAT_MODO;
+    return this._data
+      .filter(function(p){return p.colombia!=='no';})
+      .filter(function(p){return modo==='validados'?p.validado_electroriente:true;})
+      .filter(function(p){return f.categoria?p.categoria===f.categoria:true;})
+      .filter(function(p){return f.subcategoria?p.subcategoria===f.subcategoria:true;})
+      .sort(function(a,b){return a.prioridad-b.prioridad;});
+  },
+
+  exportJSON(){
+    const b=new Blob([JSON.stringify(this._data,null,2)],{type:'application/json'});
+    const a=document.createElement('a');a.href=URL.createObjectURL(b);
+    a.download='catalogo_electroriente.json';a.click();
+  },
+
+  exportSchemaCSV(){
+    const h='id,marca,linea,categoria,subcategoria,familia,descripcion,nivel,prioridad,colombia,validado_electroriente,estado,obs_comercial,obs_tecnica,fuente,fecha_revision,specs,rango_aplicacion,por_que\n';
+    const b=new Blob([h],{type:'text/csv'});
+    const a=document.createElement('a');a.href=URL.createObjectURL(b);
+    a.download='schema_catalogo_electroriente.csv';a.click();
+  }
+};
+
+let CAT_MODO='colombia';
+function setCatModo(modo){
+  CAT_MODO=modo;
+  document.querySelectorAll('.cat-modo-btn').forEach(function(b){b.classList.toggle('on',b.dataset.modo===modo);});
+}
+function catImportJSON(){
+  const i=document.createElement('input');i.type='file';i.accept='.json';
+  i.onchange=function(e){const fr=new FileReader();
+    fr.onload=function(ev){try{CM.loadJSON(JSON.parse(ev.target.result));}catch(err){alert('Error JSON: '+err.message);}};
+    fr.readAsText(e.target.files[0]);};i.click();
+}
+function catImportCSV(){
+  const i=document.createElement('input');i.type='file';i.accept='.csv';
+  i.onchange=function(e){const fr=new FileReader();
+    fr.onload=function(ev){try{CM.loadCSV(ev.target.result);}catch(err){alert('Error CSV: '+err.message);}};
+    fr.readAsText(e.target.files[0]);};i.click();
+}
+window.addEventListener('DOMContentLoaded',function(){CM._stats();});
+
+// ── SELECTORES ────────────────────────────────────────────────────
+function selectorBreaker(I,polos,curva,voltaje,pc_min,mt_req){
+  var In_d=curva==='D'?I*1.5:curva==='B'?I*1.0:I*1.25;
+  return CM.query({categoria:'Proteccion'})
+    .filter(function(p){return p.subcategoria.startsWith('Breaker');})
+    .filter(function(p){
+      var s=p.specs;
+      // TM-D y MA son ajustables: aplican para cualquier tipo de carga
+      var esTMD=s.curvas.indexOf('TM-D')>=0||s.curvas.indexOf('MA')>=0;
+      var curvaOk=!curva||esTMD||s.curvas.indexOf(curva)>=0;
+      // HOM solo tiene curva C pero sirve para uso general sin especificar
+      if(!curva&&s.curvas.indexOf('C')>=0)curvaOk=true;
+      return s.polos_disp.indexOf(polos)>=0&&
+             s.voltaje_max>=voltaje&&
+             curvaOk&&
+             s.poder_corte_kA>=pc_min&&
+             (!mt_req||s.montaje.toLowerCase().indexOf(mt_req.toLowerCase())>=0)&&
+             (s.In_rangos||[]).some(function(r){return r>=In_d;});
+    })
+    .map(function(p){
+      var In_sel=(p.specs.In_rangos||[]).find(function(r){return r>=In_d;});
+      return Object.assign({},p,{_In_sel:In_sel,_In_d:In_d});
+    });
+}
+function selectorVFD(kW,alim,amb,aplic){
+  return CM.query({categoria:'Variacion de velocidad',subcategoria:'Variador de frecuencia'})
+    .filter(function(p){
+      var s=p.specs;
+      var aplicOk=!aplic||!s.aplic||s.aplic.indexOf(aplic)>=0;
+      return s.alimentacion.indexOf(alim)>=0&&kW>=s.kW_min&&kW<=s.kW_max&&
+             aplicOk&&
+             (amb==='severo'?p.nivel==='premium':true);
+    });
+}
+function selectorSoft(kW,volt){
+  var Vn=volt.indexOf('440')>=0?440:220;
+  var I_fla=(kW*1000)/(Math.sqrt(3)*Vn*0.85*0.90);
+  return CM.query({categoria:'Variacion de velocidad',subcategoria:'Arrancador suave'})
+    .filter(function(p){
+      var s=p.specs;
+      return s.voltaje.indexOf(Vn)>=0&&I_fla>=s.A_min&&I_fla<=s.A_max;
+    })
+    .map(function(p){return Object.assign({},p,{_I_fla:I_fla,_Vn:Vn});});
+}
+
+// ── PRESENTADOR ───────────────────────────────────────────────────
+const GAMA={
+  economico:{ico:'&#x1F7E1;',badge:'ECON\xD3MICO',cls:'entrada'},
+  estandar: {ico:'&#x1F7E2;',badge:'EST\xC1NDAR', cls:'estandar'},
+  premium:  {ico:'&#x1F535;',badge:'PREMIUM',     cls:'premium'}
+};
+function vBadge(p){
+  if(p.validado_electroriente&&p.colombia==='si')
+    return'<span class="vbadge vbadge-ok">&#x2705; Validado</span>';
+  if(p.colombia==='pendiente')
+    return'<span class="vbadge vbadge-pend">&#x26A0;&#xFE0F; Pendiente</span>';
+  return'<span class="vbadge vbadge-prov">&#x1F518; Provisional</span>';
+}
+function renderAlts(alts,detFn){
+  var mLbl=CAT_MODO==='validados'?'&#x2705; Solo validados':CAT_MODO==='colombia'?'&#x1F1E8;&#x1F1F4; Colombia':'&#x1F310; Todos';
+  if(!alts.length)return'<div class="al bad">&#x274C; No se encontraron productos para esta especificacion. Contacta a Electroriente para asesoria: <strong>ventas@electroriente.com.co &middot; +57 310 7255623</strong></div>';
+  var h='<div class="alts-label">Alternativas &mdash; '+mLbl+'</div><div class="alts">';
+  alts.forEach(function(a){
+    var g=GAMA[a.nivel]||GAMA.estandar;
+    h+='<div class="alt-card alt-'+g.cls+'">'+
+       '<div class="alt-header">'+
+       '<span class="alt-badge">'+g.ico+' '+g.badge+'</span>'+
+       brandLogo(a.marca)+
+       '<span class="alt-familia">'+a.familia+'</span>'+
+       '<span style="margin-left:auto">'+vBadge(a)+'</span>'+
+       '</div>'+
+       '<div class="alt-desc">'+a.descripcion+'</div>'+
+       '<div class="alt-ref">'+detFn(a)+'</div>'+
+       '<div class="alt-why">&#x2713; '+a.por_que+'</div>'+
+       (a.obs_comercial?'<div class="alt-obs">&#x1F3EA; '+a.obs_comercial+'</div>':'')+
+       (a.obs_tecnica?'<div class="alt-nota">&#x1F527; '+a.obs_tecnica+'</div>':'')+
+       '</div>';
+  });
+  h+='</div><div class="asesor-cta"><span class="asesor-cta-ico">&#x1F4AC;</span><div>'+
+     '<div class="asesor-cta-tit">\u00BFConfirmar referencia exacta y disponibilidad?</div>'+
+     '<div class="asesor-cta-det">Comparte estos resultados con Electroriente: <strong>ventas@electroriente.com.co &middot; +57 310 7255623</strong></div>'+
+     '</div></div>';
+  return h;
+}
+
+// ── GENERADORES DE REFERENCIA EXACTA ────────────────────────────
+function pad2(n){return n<10?'0'+n:''+n;}
+function refBrk(base,polos,In,curva){
+  if(base==='HOM')return'HOM'+polos+In;
+  if(base==='EZ9F56')return'EZ9F56'+polos+pad2(In);
+  if(base==='A9F74'){var cv=curva==='B'?'3':curva==='D'?'5':'4';return'A9F7'+cv+polos+pad2(In);}
+  if(base==='A9N18'){var m={'2-80':'A9N18361','3-80':'A9N18365','3-100':'A9N18367','3-125':'A9N18369','4-80':'A9N18372'};return m[polos+'-'+In]||'A9N18xxx';}
+  if(base==='C10F3')return'C10F3TM'+(In<100?'0'+In:In);
+  if(base==='LV5633')return'LV563316';
+  if(base.indexOf('G12E')>=0){
+    var eRanges=[16,20,25,32,40,50,63,80,100,125];
+    return eRanges.indexOf(In)>=0?'G12E3F'+In:'G12F3A'+In;
+  }
+  if(base.indexOf('G20B')>=0)return(In<=200?'G20B3A':'G40N3A')+In;
+  return base;
+}
+function refVFD(base,kW,alim){
+  var pc=[[0.37,'U04'],[0.55,'U06'],[0.75,'U07'],[1.1,'U11'],[1.5,'U15'],[2.2,'U22'],[3,'U30'],[4,'U40'],[5.5,'U55'],[7.5,'U75'],[11,'D11'],[15,'D15'],[18.5,'D18'],[22,'D22'],[30,'D30'],[37,'D37'],[45,'D45'],[55,'D55'],[75,'D75'],[90,'D90'],[110,'C11'],[132,'C13'],[160,'C16'],[220,'C22'],[250,'C25'],[315,'C31']];
+  var p=pc.find(function(x){return x[0]>=kW;})||pc[pc.length-1];
+  var suf='';
+  if(base==='ATV12')suf=alim==='1f220'?'M2':'M3';
+  else if(base==='ATV320')suf=alim==='3f440'?'N4C':alim==='1f220'?'M2C':'M3C';
+  else if(base==='ATV610')suf='N4';
+  else suf=alim==='3f440'?'N4':'M3';
+  return{ref:base+p[1]+suf,kW_sel:p[0],hp_sel:p[0]/0.7457};
+}
+function refSoft(base,I_fla){
+  var sizes={ATS22:[17,32,47,62,75,88,110,140,170,250,320],ATS430:[32,47],ATS480:[32,47,62,75,88,110,170,210,250,320,410]};
+  var arr=sizes[base]||[I_fla];
+  var sel=arr.find(function(a){return a>=I_fla;})||arr[arr.length-1];
+  var pre=sel>=110?'C':'D';
+  var suf=base==='ATS480'?'Y':'S6';
+  return{ref:base+pre+pad2(sel)+suf,A_sel:sel};
+}
+function refBox(ref){
+  return'<div class="ref-exacta" onclick="copyRef(this)" data-ref="'+ref+'" title="Clic para copiar"><span>'+ref+'</span><span class="ref-copy-ico">&#x1F4CB; Copiar</span></div>';
+}
+function copyRef(el){
+  var r=el.dataset.ref;
+  if(navigator.clipboard){navigator.clipboard.writeText(r).then(function(){
+    el.querySelector('.ref-copy-ico').innerHTML='&#x2705; Copiado';
+    setTimeout(function(){el.querySelector('.ref-copy-ico').innerHTML='&#x1F4CB; Copiar';},1500);
+  });}else{
+    var t=document.createElement('textarea');t.value=r;document.body.appendChild(t);t.select();document.execCommand('copy');document.body.removeChild(t);
+    el.querySelector('.ref-copy-ico').innerHTML='&#x2705; Copiado';
+    setTimeout(function(){el.querySelector('.ref-copy-ico').innerHTML='&#x1F4CB; Copiar';},1500);
+  }
+}
+
+function cBreaker(){
+  var I=parseFloat(document.getElementById('b-i').value);
+  var curva=document.getElementById('b-t').value;
+  var polos=parseInt(document.getElementById('b-p').value);
+  var voltaje=parseInt(document.getElementById('b-v').value);
+  var pc=parseFloat(document.getElementById('b-pc').value)||0;
+  var mt=document.getElementById('b-mt').value;
+  if(!chk(I,0,null,'Corriente de la carga','r1'))return;
+  var fac=curva==='D'?1.5:curva==='B'?1.0:1.25;
+  var notaD=curva==='D'?'<div class="al warn">\u26A0\uFE0F Factor de dise\u00F1o aplicado: \u00D71.5 (valor prudente). Si el motor no arranca con este calibre, puede escalar hasta \u00D72.5 seg\u00FAn NTC 2050 Art. 430-52 (Tabla 430-152).</div>':'';
+  var In_d=I*fac;
+  var curvaLbl=curva?'Curva '+curva:'Sin especificar';
+  document.getElementById('r1').className='res on';
+  document.getElementById('r1m').textContent=f1(In_d)+' A dise\u00F1o \u2014 '+curvaLbl+' \u2014 '+polos+'P \u2014 '+voltaje+'V';
+  document.getElementById('r1s').innerHTML='I carga: <strong>'+f1(I)+' A</strong> &nbsp;&middot;&nbsp; Factor \xD7'+fac+' &nbsp;&middot;&nbsp; I dise\u00F1o: <strong>'+f1(In_d)+' A</strong>';
+  document.getElementById('r1r').innerHTML=renderAlts(selectorBreaker(I,polos,curva,voltaje,pc,mt),function(a){
+    var ref=refBrk(a.specs.ref_base,polos,a._In_sel,curva||'C');
+    var curvaInfo=a.specs.curvas.join('/');
+    return refBox(ref)+'<div style="margin-top:6px;font-size:.78rem;color:var(--sub)">'+a._In_sel+'A &middot; '+curvaInfo+' &middot; '+polos+'P &middot; '+a.specs.poder_corte_kA+' kA &middot; '+a.specs.montaje+'</div>';
+  })+notaD;
+}
+
+// ── CONVERSIÓN DE POTENCIA ──────────────────────────────────────
+function cPot(){
+  var val=parseFloat(document.getElementById('pt-v').value);
+  var u=document.getElementById('pt-u').value;
+  var fp=parseFloat(document.getElementById('pt-fp').value);
+  var sys=document.getElementById('pt-s').value;
+  if(!chk(val,0,null,'Valor de potencia','r2'))return;
+  if(!chk(fp,0.1,1,'Factor de Potencia','r2'))return;
+  var V=gV(sys),is3=tri(sys);
+  // Convertir todo a kW
+  var kW;
+  if(u==='kW')kW=val;
+  else if(u==='W')kW=val/1000;
+  else if(u==='HP')kW=val*0.7457;
+  else if(u==='kVA')kW=val*fp;
+  var W=kW*1000,HP=kW/0.7457,kVA=kW/fp,kVAR=kVA*Math.sqrt(1-fp*fp);
+  var I=is3?(kW*1000)/(Math.sqrt(3)*V*fp):(kW*1000)/(V*fp);
+  document.getElementById('r2').className='res on';
+  document.getElementById('r2g').innerHTML=
+    '<div class="ccell"><div class="cval">'+f2(W)+'</div><div class="cunit">Watts</div></div>'+
+    '<div class="ccell"><div class="cval">'+f2(kW)+'</div><div class="cunit">kW</div></div>'+
+    '<div class="ccell"><div class="cval">'+f2(HP)+'</div><div class="cunit">HP</div></div>'+
+    '<div class="ccell"><div class="cval">'+f2(kVA)+'</div><div class="cunit">kVA</div></div>'+
+    '<div class="ccell"><div class="cval">'+f2(kVAR)+'</div><div class="cunit">kVAR</div></div>'+
+    '<div class="ccell"><div class="cval">'+f1(I)+'</div><div class="cunit">Amperios</div></div>';
+  document.getElementById('r2s').innerHTML=
+    'Corriente nominal: <strong>'+f1(I)+' A</strong> &nbsp;\u00B7&nbsp; '+
+    (is3?'Trif\u00E1sico':'Monof\u00E1sico')+' '+V+'V &nbsp;\u00B7&nbsp; FP: '+fp+
+    '<br>F\u00F3rmula: I = '+(is3?'P / (\u221A3 \u00D7 V \u00D7 FP)':'P / (V \u00D7 FP)')+
+    ' = '+(is3?f2(kW*1000)+' / (\u221A3 \u00D7 '+V+' \u00D7 '+fp+')':f2(kW*1000)+' / ('+V+' \u00D7 '+fp+')')+
+    ' = <strong>'+f1(I)+' A</strong>';
+}
+
+// ── CAÍDA DE TENSIÓN ────────────────────────────────────────────
+function cVD(){
+  var I=parseFloat(document.getElementById('vd-i').value);
+  var sys=document.getElementById('vd-s').value;
+  var L=parseFloat(document.getElementById('vd-l').value);
+  var ci=parseInt(document.getElementById('vd-awg').value);
+  var mf=parseFloat(document.getElementById('vd-m').value);
+  var lim=parseFloat(document.getElementById('vd-lim').value);
+  if(!chk(I,0,null,'Corriente del circuito','r3'))return;
+  if(!chk(L,0,null,'Longitud del tramo','r3'))return;
+  var V=gV(sys),is3=tri(sys);
+  var cable=CB[ci];
+  var R=cable.r*mf; // ohm/km ajustado por material
+  var Rkm=R; // ohm/km
+  var Rm=Rkm/1000; // ohm/m
+  var vd,vdPct;
+  if(is3){
+    vd=Math.sqrt(3)*I*Rm*L; // caida en voltios (ida, asumiendo carga balanceada)
+  }else{
+    vd=2*I*Rm*L; // ida y vuelta
+  }
+  vdPct=(vd/V)*100;
+  var ok=vdPct<=lim;
+  document.getElementById('r3').className='res on';
+  document.getElementById('r3m').textContent=f2(vdPct)+'% — '+f2(vd)+' V';
+  document.getElementById('r3s').innerHTML=
+    'Cable: <strong>AWG '+cable.awg+' ('+cable.mm2+' mm\u00B2)</strong> &nbsp;\u00B7&nbsp; R: '+f3(Rkm)+' \u03A9/km'+
+    '<br>Corriente: <strong>'+f1(I)+' A</strong> &nbsp;\u00B7&nbsp; Longitud: <strong>'+L+' m</strong> &nbsp;\u00B7&nbsp; '+(is3?'Trif\u00E1sico':'Monof\u00E1sico')+' '+V+'V'+
+    '<br>Material: '+(mf===1?'Cobre':'Aluminio')+' &nbsp;\u00B7&nbsp; L\u00EDmite: '+lim+'%';
+  document.getElementById('r3a').innerHTML=ok?
+    '<div class="al ok" style="margin-top:12px">\u2705 Ca\u00EDda de '+f2(vdPct)+'% est\u00E1 dentro del l\u00EDmite de '+lim+'% \u2014 <strong>CUMPLE</strong> NTC 2050 / RETIE</div>':
+    '<div class="al bad" style="margin-top:12px">\u274C Ca\u00EDda de '+f2(vdPct)+'% supera el l\u00EDmite de '+lim+'% \u2014 <strong>NO CUMPLE</strong>. Aumente el calibre del conductor o reduzca la longitud del tramo.</div>';
+  var matNom=mf===1?'Cobre':'Aluminio';
+  document.getElementById('r3r').innerHTML=recBox('pry',
+    'THHN/THWN-2 AWG '+cable.awg+' '+matNom+' 90\u00B0C',
+    'Ca\u00EDda: '+f2(vdPct)+'% ('+f2(vd)+' V) en '+L+'m \u00B7 R: '+f3(Rkm)+' \u03A9/km'+
+    '<br>\u2705 Disponible en Electroriente \u2014 Procables Colombia');
+}
+
+function cVar(){
+  var p=parseFloat(document.getElementById('va-p').value);
+  if(!chk(p,0,null,'Potencia del motor','r4'))return;
+  var u=document.getElementById('va-u').value,volt=document.getElementById('va-v').value;
+  var tipo=document.getElementById('va-t').value,amb=document.getElementById('va-amb').value;
+  var aplic=document.getElementById('va-a').value;
+  var kW=u==='HP'?p*0.7457:p,hp=u==='HP'?p:p/0.7457;
+  var alim=volt==='220m'?'1f220':volt==='220t'?'3f220':'3f440';
+  var vLbl=volt==='220m'?'Monofasico 220V':volt==='220t'?'Trifasico 220V':'Trifasico 440V';
+  var aplicNom={gral:'Maquinaria general',bomb:'Bomba/ventilador',comp:'Compresor',grua:'Gr\u00FAa/elevador'};
+  document.getElementById('r4').className='res on';
+  if(tipo==='vfd'){
+    document.getElementById('r4m').textContent=f2(kW)+' kW / '+f2(hp)+' HP \u2014 VFD \u2014 '+vLbl;
+    document.getElementById('r4s').innerHTML='Variadores aplicables para <strong>'+(aplicNom[aplic]||aplic)+'</strong> \u2014 '+vLbl;
+    document.getElementById('r4r').innerHTML=renderAlts(selectorVFD(kW,alim,amb,aplic),function(a){
+      var r=refVFD(a.specs.ref_base,kW,alim);
+      return refBox(r.ref)+'<div style="margin-top:6px;font-size:.78rem;color:var(--sub)">Motor: '+f2(kW)+' kW \u2192 <strong>Modelo '+f2(r.kW_sel)+' kW ('+f1(r.hp_sel)+' HP)</strong> &middot; '+a.specs.IP+'<br>'+a.specs.funciones+'</div>';
+    });
+  }else{
+    // Validaciones para arrancador suave
+    if(volt==='220m'){
+      showErr('r4','Los arrancadores suaves son trif\u00E1sicos. Seleccione 220V o 440V Trif\u00E1sico.');return;
+    }
+    if(aplic==='grua'){
+      showErr('r4','Las gr\u00FAas y elevadores requieren control de velocidad continuo (VFD), no arrancador suave. Seleccione "Variador de Velocidad (VFD)" como tipo de equipo.');return;
+    }
+    document.getElementById('r4m').textContent=f2(kW)+' kW / '+f2(hp)+' HP \u2014 Arrancador suave \u2014 '+vLbl;
+    document.getElementById('r4s').innerHTML='Arrancadores suaves para <strong>'+(aplicNom[aplic]||aplic)+'</strong> \u2014 '+vLbl;
+    document.getElementById('r4r').innerHTML=renderAlts(selectorSoft(kW,volt),function(a){
+      var r=refSoft(a.specs.ref_base,a._I_fla);
+      return refBox(r.ref)+'<div style="margin-top:6px;font-size:.78rem;color:var(--sub)">I FLA motor: '+f1(a._I_fla)+' A \u2192 <strong>Arrancador '+r.A_sel+' A</strong> &middot; '+a._Vn+'V trif\u00E1sico<br>'+a.specs.funciones+'</div>';
+    });
+  }
+}
+const LUX={of:500,bd:200,in:300,co:750,pa:150,pe:50,pi:100,re:500,ho:500};
+const NOM={of:'Oficina',bd:'Bodega',in:'Industrial/Taller',co:'Comercial/Retail',pa:'Corredor',pe:'Parqueo Exterior',pi:'Parqueo Interior',re:'Sala Reuniones',ho:'Hospital/Clínica'};
+const SYL={
+  of:{lm:3600,W:40,nom:'Panel LED Sylvania 40W',cod:'SYL-PNL-40W'},
+  bd:{lm:12000,W:100,nom:'Highbay LED Sylvania 100W',cod:'SYL-HB-100W'},
+  in:{lm:18000,W:150,nom:'Highbay LED Sylvania 150W',cod:'SYL-HB-150W'},
+  co:{lm:3600,W:40,nom:'Panel LED Sylvania 40W',cod:'SYL-PNL-40W'},
+  pa:{lm:1800,W:18,nom:'Tubular LED Sylvania T8 18W',cod:'SYL-TB-18W'},
+  pe:{lm:8000,W:80,nom:'Luminaria Vial LED Sylvania 80W',cod:'SYL-VL-80W'},
+  pi:{lm:9000,W:80,nom:'Highbay LED Sylvania 80W',cod:'SYL-HB-80W'},
+  re:{lm:3600,W:40,nom:'Panel LED Sylvania 40W',cod:'SYL-PNL-40W'},
+  ho:{lm:3600,W:40,nom:'Panel LED Sylvania 40W',cod:'SYL-PNL-40W'},
+};
+// ── CANALIZACION DEXSON ──────────────────────────────────────────
+// Areas externas cable THHN (mm2) por calibre AWG
+const CABLE_AREA={14:13.3,12:17.0,10:21.7,8:35.9,6:47.4,4:64.2,2:85.9,'1/0':122.7,'2/0':143.4,'3/0':169.3,'4/0':201.1,'250':262.8};
+const DEXSON_LISA=[
+  {w:10,h:10,a:100,ref:'DXN10021',nom:'10x10 c/adhesivo'},
+  {w:13,h:7,a:91,ref:'DXN10031',nom:'13x7 c/adhesivo'},
+  {w:20,h:12,a:240,ref:'DXN10051',nom:'20x12 c/adhesivo'},
+  {w:22,h:10,a:220,ref:'DXN10461',nom:'22x10 c/adhesivo'},
+  {w:20,h:20,a:400,ref:'DXN10071',nom:'20x20 c/adhesivo'},
+  {w:32,h:12,a:384,ref:'DXN10111',nom:'32x12 c/adhesivo'},
+  {w:25,h:25,a:625,ref:'DXN10091',nom:'25x25 c/adhesivo'},
+  {w:60,h:13,a:780,ref:'DXN10023',nom:'60x13 c/adhesivo'},
+  {w:60,h:16,a:960,ref:'DXN10201',nom:'60x16'},
+  {w:40,h:25,a:1000,ref:'DXN10151',nom:'40x25 c/adhesivo'},
+  {w:40,h:40,a:1600,ref:'DXN10191',nom:'40x40 c/adhesivo'},
+  {w:60,h:40,a:2400,ref:'DXN10211',nom:'60x40'},
+  {w:100,h:45,a:4500,ref:'DXN10011',nom:'100x45'}
+].sort(function(a,b){return a.a-b.a;});
+const DEXSON_RAN=[
+  {w:25,h:25,a:625,ref:'DXN10032',nom:'25x25 ranurada'},
+  {w:25,h:40,a:1000,ref:'DXN10042',nom:'25x40 ranurada'},
+  {w:25,h:60,a:1500,ref:'DXN10052',nom:'25x60 ranurada'},
+  {w:40,h:40,a:1600,ref:'DXN10062',nom:'40x40 ranurada'},
+  {w:40,h:60,a:2400,ref:'DXN10072',nom:'40x60 ranurada'},
+  {w:60,h:40,a:2400,ref:'DXN10082',nom:'60x40 ranurada'},
+  {w:60,h:60,a:3600,ref:'DXN10092',nom:'60x60 ranurada'},
+  {w:60,h:80,a:4800,ref:'DXN10102',nom:'60x80 ranurada'},
+  {w:80,h:60,a:4800,ref:'DXN10112',nom:'80x60 ranurada'},
+  {w:80,h:80,a:6400,ref:'DXN10122',nom:'80x80 ranurada'},
+  {w:100,h:100,a:10000,ref:'DXN10012',nom:'100x100 ranurada'}
+].sort(function(a,b){return a.a-b.a;});
+
+function cCanal(){
+  var cals=[14,12,10,8,6,4,2];
+  var total=0,nCables=0,det=[];
+  cals.forEach(function(c){
+    var n=parseInt(document.getElementById('cn-'+c).value)||0;
+    if(n>0){total+=n*CABLE_AREA[c];nCables+=n;det.push(n+'x AWG '+c);}
+  });
+  if(nCables===0){showErr('r6','Ingresa al menos un cable.');return;}
+  var fill=0.40;
+  var areaReq=total/fill;
+  var tipo=document.getElementById('cn-tipo').value;
+  var tabla=tipo==='ranurada'?DEXSON_RAN:DEXSON_LISA;
+  var sel=tabla.find(function(c){return c.a>=areaReq;});
+  document.getElementById('r6').className='res on';
+  if(!sel){
+    document.getElementById('r6m').textContent='Excede capacidad';
+    document.getElementById('r6s').innerHTML='Area total cables: <strong>'+f1(total)+' mm\u00B2</strong> \u2014 Area requerida (40%): <strong>'+f1(areaReq)+' mm\u00B2</strong><br>La canaleta mas grande disponible ('+tabla[tabla.length-1].nom+') no es suficiente. Considere usar varias canaletas o bandeja portacable.';
+    document.getElementById('r6r').innerHTML='';return;
+  }
+  var pct=f1((total/sel.a)*100);
+  document.getElementById('r6m').textContent='Canaleta Dexson '+sel.w+'x'+sel.h+' mm';
+  document.getElementById('r6s').innerHTML='Cables: <strong>'+det.join(' + ')+'</strong> ('+nCables+' conductores)<br>Area total cables: <strong>'+f1(total)+' mm\u00B2</strong> \u2014 Area canaleta: <strong>'+sel.a+' mm\u00B2</strong> \u2014 Llenado: <strong>'+pct+'%</strong> (max 40%)';
+  document.getElementById('r6r').innerHTML=
+    '<div class="rec"><div class="rec-ico ico-gr"><img src="'+LOGO_PATH+'logo-schneider-electric.png" alt="Dexson" style="height:28px;max-width:38px;object-fit:contain;display:block"></div><div>'+
+    '<div class="rbrand">Schneider Electric \u00B7 Dexson</div>'+
+    '<div class="rprod">Canaleta '+sel.nom+' \u2014 '+sel.w+'x'+sel.h+' mm</div>'+
+    refBox(sel.ref)+
+    '<div class="rdet" style="margin-top:6px">\u2705 Disponible en Electroriente \u2014 Dexson Colombia<br>Norma NTC 2050 Art. 376.22 \u00B7 RETIE \u00B7 Llenado max 40%</div>'+
+    '</div></div>';
+}
+
+// ── TUBERIA Y BANDEJA ───────────────────────────────────────────
+const TUBO_EMT=[
+  {nom:'1/2"',id_mm:15.8,a:196,ref:'T1/2-BINSON'},
+  {nom:'3/4"',id_mm:20.9,a:343,ref:'T3/4BINSON'},
+  {nom:'1"',id_mm:26.6,a:556,ref:'T1EMT'},
+  {nom:'1-1/4"',id_mm:35.1,a:968,ref:'EMT11/4'},
+  {nom:'1-1/2"',id_mm:40.9,a:1314,ref:'T11/2EMT-BINSON'},
+  {nom:'2"',id_mm:52.5,a:2165,ref:'T2EMT-BINSON'}
+];
+const TUBO_IMC=[
+  {nom:'1/2"',id_mm:16.1,a:204,ref:'T1/2 IMC'},
+  {nom:'3/4"',id_mm:21.0,a:346,ref:'T3/4IMC-B'},
+  {nom:'1"',id_mm:27.0,a:573,ref:'T1IMC-BN'},
+  {nom:'1-1/4"',id_mm:35.4,a:984,ref:'T1 1/4-BS'},
+  {nom:'1-1/2"',id_mm:41.2,a:1333,ref:'T11/2IMC-B'},
+  {nom:'2"',id_mm:52.9,a:2198,ref:'T2-BINSON'},
+  {nom:'3"',id_mm:78.5,a:4840,ref:'T3-BS'}
+];
+const BANDEJA=[
+  {nom:'10x8 cm',a:8000,ref:'Portacable 10x8'},
+  {nom:'20x8 cm',a:16000,ref:'Portacable 20x8'},
+  {nom:'30x8 cm',a:24000,ref:'Portacable 30x8'},
+  {nom:'40x8 cm',a:32000,ref:'Portacable 40x8'},
+  {nom:'50x8 cm',a:40000,ref:'Portacable 50x8'},
+  {nom:'60x8 cm',a:48000,ref:'Portacable 60x8'},
+  {nom:'80x8 cm',a:64000,ref:'Portacable 80x8'}
+];
+
+function cTubo(){
+  var cals=[14,12,10,8,6,4,2];
+  var extra=[['10a','1/0'],['40','4/0']];
+  var total=0,nCables=0,det=[];
+  cals.forEach(function(c){
+    var n=parseInt(document.getElementById('tb-'+c).value)||0;
+    if(n>0){total+=n*CABLE_AREA[c];nCables+=n;det.push(n+'x AWG '+c);}
+  });
+  extra.forEach(function(e){
+    var n=parseInt(document.getElementById('tb-'+e[0]).value)||0;
+    if(n>0){total+=n*CABLE_AREA[e[1]];nCables+=n;det.push(n+'x AWG '+e[1]);}
+  });
+  if(nCables===0){showErr('r7','Ingresa al menos un cable.');return;}
+  var tipo=document.getElementById('tb-tipo').value;
+  var fill=tipo==='bandeja'?0.40:(nCables===1?0.53:nCables===2?0.31:0.40);
+  var fillPct=tipo==='bandeja'?'40%':(nCables===1?'53% (1 cable)':nCables===2?'31% (2 cables)':'40% (3+ cables)');
+  var areaReq=total/fill;
+  var tabla=tipo==='emt'?TUBO_EMT:tipo==='imc'?TUBO_IMC:BANDEJA;
+  var tipoNom=tipo==='emt'?'EMT':tipo==='imc'?'IMC':'Bandeja portacable';
+  var sel=tabla.find(function(t){return t.a>=areaReq;});
+  document.getElementById('r7').className='res on';
+  if(!sel){
+    document.getElementById('r7m').textContent='Excede capacidad';
+    document.getElementById('r7s').innerHTML='Area total cables: <strong>'+f1(total)+' mm\u00B2</strong> \u2014 Area requerida ('+fillPct+'): <strong>'+f1(areaReq)+' mm\u00B2</strong><br>El '+tipoNom+' mas grande disponible no es suficiente. Considere usar circuitos paralelos o bandeja portacable.';
+    document.getElementById('r7r').innerHTML='';return;
+  }
+  var pct=f1((total/sel.a)*100);
+  document.getElementById('r7m').textContent=(tipo==='bandeja'?'Bandeja ':'Tubo '+tipoNom+' ')+sel.nom;
+  document.getElementById('r7s').innerHTML='Cables: <strong>'+det.join(' + ')+'</strong> ('+nCables+' conductores)<br>Area total cables: <strong>'+f1(total)+' mm\u00B2</strong> \u2014 Area '+tipoNom+': <strong>'+sel.a+' mm\u00B2</strong> \u2014 Llenado: <strong>'+pct+'%</strong> (max '+fillPct+')';
+  if(tipo==='bandeja'){
+    document.getElementById('r7r').innerHTML=
+      '<div class="rec"><div class="rec-ico ico-bl" style="font-size:1.3rem">\uD83D\uDCE6</div><div>'+
+      '<div class="rbrand">Bandeja Portacable</div>'+
+      '<div class="rprod">'+sel.nom+' tipo malla / escalerilla</div>'+
+      '<div class="rdet">\u2705 Disponible en Electroriente \u2014 Consultar fabricante y stock<br>Norma NTC 2050 Art. 392 \u00B7 RETIE</div>'+
+      '</div></div>';
+  }else{
+    document.getElementById('r7r').innerHTML=
+      '<div class="rec"><div class="rec-ico ico-gr"><img src="'+LOGO_PATH+'Binson.png" alt="Binson" style="height:28px;max-width:38px;object-fit:contain;display:block"></div><div>'+
+      '<div class="rbrand">Binson</div>'+
+      '<div class="rprod">Tubo '+tipoNom+' '+sel.nom+' galvanizado x 3m</div>'+
+      refBox(sel.ref)+
+      '<div class="rdet" style="margin-top:6px">\u2705 Disponible en Electroriente \u2014 Binson Colombia<br>Norma NTC 2050 Cap. 9 Tabla 1 \u00B7 RETIE \u00B7 Llenado max '+fillPct+'</div>'+
+      '</div></div>';
+  }
+}
+function cIlum(){
+  const tipo=document.getElementById('il-t').value,A=parseFloat(document.getElementById('il-a').value),h=parseFloat(document.getElementById('il-h').value),refl=parseFloat(document.getElementById('il-r').value),E=LUX[tipo];
+  if(!chk(A,0,null,'Área del espacio','r5'))return;
+  if(!chk(h,0,null,'Altura de montaje','r5'))return;
+  let lumF={...SYL[tipo]};
+  if((tipo==='bd'||tipo==='in')&&h>6)lumF={lm:18000,W:150,nom:'Highbay LED Sylvania 150W',cod:'SYL-HB-150W'};
+  if((tipo==='bd'||tipo==='in')&&h>10)lumF={lm:24000,W:200,nom:'Highbay LED Sylvania 200W',cod:'SYL-HB-200W'};
+  const FM_map={of:0.80,bd:0.70,in:0.70,co:0.80,pa:0.75,pe:0.75,pi:0.75,re:0.80,ho:0.85};
+  const CU=refl*(h>8?0.82:h>5?0.90:0.97),FM=FM_map[tipo]||0.80,N=Math.ceil((E*A)/(lumF.lm*CU*FM)),Pt=N*lumF.W,den=Pt/A,kWh_mes=Pt*8*22/1000;
+  document.getElementById('r5').className='res on';
+  document.getElementById('r5m').textContent=`${N} luminarias`;
+  document.getElementById('r5s').innerHTML=`Nivel req.: <strong>${E} lux</strong> (${NOM[tipo]}) &nbsp;·&nbsp; Área: <strong>${A} m²</strong> &nbsp;·&nbsp; Altura: ${h}m<br>Potencia total: <strong>${Pt} W (${f2(Pt/1000)} kW)</strong> &nbsp;·&nbsp; Densidad: <strong>${f1(den)} W/m²</strong><br>Consumo estimado: <strong>${f1(kWh_mes)} kWh/mes</strong> (8h/día · 22 días)`;
+  document.getElementById('r5r').innerHTML=recBox('syl',`${lumF.nom} × ${N} und. — Ref: ${lumF.cod}`,`${lumF.lm.toLocaleString()} lúmenes · ${lumF.W}W por unidad · Total instalado: ${Pt}W<br>Norma RETILAP Colombia<br>✅ Disponible en Electroriente — Sylvania Colombia · <strong>ventas@electroriente.com.co</strong>`);
+}
+
+// ── ADMIN ACCESS ─────────────────────────────────────────────────
+// Clave simple para acceso al panel de administración del catálogo.
+// NO es seguridad real (es JS client-side) — solo oculta la UI de admin
+// para que clientes no vean ni modifiquen el catálogo accidentalmente.
+const ADMIN_KEY='electroriente2026';
+let adminOn=false;
+document.getElementById('admin-trigger').addEventListener('click',function(){
+  if(adminOn){
+    document.getElementById('admin-panel').style.display='none';
+    adminOn=false;
+    this.textContent='\uD83D\uDD12';
+    return;
+  }
+  const k=prompt('Clave de administrador:');
+  if(k===ADMIN_KEY){
+    document.getElementById('admin-panel').style.display='block';
+    document.getElementById('admin-panel').scrollIntoView({behavior:'smooth'});
+    adminOn=true;
+    this.textContent='\uD83D\uDD13';
+  }else if(k!==null){
+    alert('Clave incorrecta.');
+  }
+});
+</script>
+</body>
+</html>
